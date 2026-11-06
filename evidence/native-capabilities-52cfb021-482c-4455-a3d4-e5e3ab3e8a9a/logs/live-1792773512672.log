@@ -1,0 +1,9 @@
+openmausbot webhook receiver on http://127.0.0.1:22486
+openmausbot open-source edition (enterprise layer present but OMB_LICENSE_KEY is not set)
+local requests: owner trust (desktop app)
+brand: default
+openmausbot server on http://127.0.0.1:22485
+[omb-turn] bot=93f5e627-cee9-4138-ad98-20c8ced87333 text="只读取屏幕尺寸的合成验收\n\n[本地助理能力说明，2026-10-24 00:38:35 Asia/Shanghai]\n你有 assistan" images=0 depth=0 card=false
+browser: Google Chrome 155 (installed)
+[omb-turn] bot=93f5e627-cee9-4138-ad98-20c8ced87333 text="合成尺寸验收 FULL\n\n[本地助理能力说明，2026-10-24 00:38:37 Asia/Shanghai]\n你有 assistant" images=0 depth=0 card=false
+[omb-turn] bot=93f5e627-cee9-4138-ad98-20c8ced87333 text="合成尺寸验收 REVOKE\n\n[本地助理能力说明，2026-10-24 00:38:39 Asia/Shanghai]\n你有 assista" images=0 depth=0 card=false

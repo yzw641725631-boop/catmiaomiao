@@ -1,0 +1,2 @@
+# Store exact bytes (Windows CRLF files stay as-is; no autocrlf conversion either way).
+* -text

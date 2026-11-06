@@ -1,0 +1,23 @@
+--- before/adapters/reachai.mjs
++++ after/adapters/reachai.mjs
+@@ -3,6 +3,7 @@
+ import { setTimeout as delay } from 'node:timers/promises';
+ import { fail, reachaiOrigin } from './endpoints.mjs';
+ import {hasImages} from './vision.mjs';
++import { completeVisionWithRetry } from './vision-retry.mjs';
+ 
+ const JSON_LIMIT = 8 * 1024 * 1024;
+ const SSE_LIMIT = 1024 * 1024;
+@@ -290,10 +291,8 @@
+       if (!body || typeof body !== 'object' || Array.isArray(body)) throw fail('模型请求格式无效。');
+       if(body.model!==config.llmId)throw fail('这个模型未在助理设置中启用。',403);
+       if(hasImages(body)&&vision){
+-        const started=Date.now();let result;
+-        try{result=await vision.complete(body,abort.signal);}catch(error){onDiagnostic({at:new Date().toISOString(),instanceId:'us-vision',result:'failed',status:error.status||502,code:error.code||'VISION_UPSTREAM_ERROR',elapsedMs:Date.now()-started,messageCount:body.messages.length,toolCount:body.tools?.length||0});throw error;}
+-        const choice=result?.choices?.[0];if(!choice?.message||!choice.finish_reason)throw fail('视觉模型没有返回完整回复。',502);
+-        onDiagnostic({at:new Date().toISOString(),instanceId:'us-vision',result:'completed',elapsedMs:Date.now()-started,messageCount:body.messages.length,toolCount:body.tools?.length||0});
++        const result=await completeVisionWithRetry(vision,body,abort.signal,{diagnostic:event=>onDiagnostic({at:new Date().toISOString(),instanceId:'us-vision',messageCount:body.messages.length,toolCount:body.tools?.length||0,...event})});
++        const choice=result.choices[0];
+         if(!body.stream)return json(200,result);
+         res.writeHead(200,{'content-type':'text/event-stream','cache-control':'no-store'});
+         const message=choice.message;

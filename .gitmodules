@@ -1,0 +1,3 @@
+[submodule "upstream/OpenMausBot"]
+	path = upstream/OpenMausBot
+	url = https://github.com/milind-soni/OpenMausBot.git

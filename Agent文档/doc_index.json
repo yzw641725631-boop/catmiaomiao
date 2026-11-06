@@ -1,0 +1,786 @@
+{
+  "version": "v1.0",
+  "generated": "2026-11-07",
+  "project": "openmaus-assistant",
+  "scope": "project-only",
+  "project_path_mappings": {
+    "openmaus-assistant": {
+      "knowledge": "Agent文档/openmaus-assistant_知识库/",
+      "work_logs": "Agent文档/openmaus-assistant_工作日志/",
+      "code": "./"
+    }
+  },
+  "documents": [
+    {
+      "id": "openmaus-assistant_design_61e74959a84c",
+      "name": "README.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "README.md",
+      "version": "v1.0",
+      "skills": [],
+      "template": null,
+      "knowledge": "持续沟通、受限工具许可和图片输入当前入口；104项通过、美国视觉真实成功与令牌失效500边界。"
+    },
+    {
+      "id": "openmaus-assistant_design_481e3a0974f8",
+      "name": "人物驱动方案_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "docs/人物驱动方案_v1.0.md",
+      "version": "v1.0",
+      "skills": [],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_knowledge_df3c4a439c26",
+      "name": "源码评估_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/源码评估_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_03c29a4a6716",
+      "name": "首版技术方案_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "docs/首版技术方案_v1.0.md",
+      "version": "v1.0",
+      "skills": [],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_0d5f5733a317",
+      "name": "component-patterns.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/component-patterns.md",
+      "version": "v1.0",
+      "skills": [
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_f976362cb74d",
+      "name": "design-tokens.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/design-tokens.md",
+      "version": "v1.0",
+      "skills": [
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_907c6d611a6d",
+      "name": "interaction-patterns.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/interaction-patterns.md",
+      "version": "v1.0",
+      "skills": [
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_7936c40b5096",
+      "name": "page-patterns.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/page-patterns.md",
+      "version": "v1.0",
+      "skills": [
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_5af4107f619c",
+      "name": "prototype-rules.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/prototype-rules.md",
+      "version": "v1.0",
+      "skills": [
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_7a0294583b36",
+      "name": "README.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/README.md",
+      "version": "v1.0",
+      "skills": [
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_3ce4a4206d75",
+      "name": "approved-visual-direction-v1.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "design/approved-visual-direction-v1.md",
+      "version": "v1.0",
+      "skills": [],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_knowledge_6fb9257ede9c",
+      "name": "项目概览_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "Agent文档/openmaus-assistant_知识库/项目概览_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "最新恢复入口：连续语音/独立工作、104项、美国视觉模型与500、日常185条记录保持和未完成范围。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_b042718568bf",
+      "name": "工作报告_20261021_底座验证与首版方案_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261021_底座验证与首版方案_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_design_3f2337d46609",
+      "name": "开发准入记录_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "docs/开发准入记录_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_knowledge_a0e6e0ca86f7",
+      "name": "本地首版实现与验证_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/本地首版实现与验证_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_knowledge_94f5c3a9dd76",
+      "name": "ReachAI模型与语音接入核对_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/ReachAI模型与语音接入核对_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_worklog_4cc972ce4c78",
+      "name": "工作报告_20261021_本地首版与ReachAI核对_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261021_本地首版与ReachAI核对_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_knowledge_8a764450d33f",
+      "name": "ReachAI接入实现与验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/ReachAI接入实现与验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "ReachAI/Saturn Cloud 负责模型与语音；当前文字模型网页验证503在无输出时最多自动重发两次，已有文字/工具事件不重放，账号换号由上游决定。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_ff2ab68201a6",
+      "name": "工作报告_20261022_ReachAI接入实现_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261022_ReachAI接入实现_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_worklog_35a9c5e50023",
+      "name": "工作报告_20261022_ReachAI真实LLM连接_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261022_ReachAI真实LLM连接_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_knowledge_04ee0e2ff019",
+      "name": "Windows文件工具接入与验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/Windows文件工具接入与验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_worklog_6506537800ce",
+      "name": "工作报告_20261022_Windows真实文件链路_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261022_Windows真实文件链路_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_worklog_c07e42694c9a",
+      "name": "工作报告_20261022_语音自动发送与Markdown修复_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261022_语音自动发送与Markdown修复_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "修复语音停顿自动发送、原生回复归属播报、同 segment end 确认和 GFM 渲染；42 项隔离检查、合成语音真实 ASR/LLM/TTS、浏览器播放及表格验证通过；真人麦克风/听感待测，G5 未终签。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_6560909f9ee4",
+      "name": "连续语音与模型错误恢复_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/连续语音与模型错误恢复_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "耳机采集、两秒停顿、持续语音与终态失败续听；文字模型网页验证503在无输出时最多自动重发两次，已有工具事件不重放；云端长期稳定性仍未宣称。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_3fd94173ef75",
+      "name": "工作报告_20261022_耳机采集与连续语音恢复_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261022_耳机采集与连续语音恢复_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "真人耳机单轮自动发送/回复已确认，持续语音与2秒停顿实现；双助理503由上游网页验证导致，本地正确提示并续听。62测试通过，连续真人两轮/G5终签待验。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_644dfbca34cd",
+      "name": "个人助理能力与工作台扩展_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/个人助理能力与工作台扩展_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "授权文件夹与PDF/DOCX、公开网页、偏好确认、本地提醒/定时派工和真实工作UI；72检查及实际当前模型/调度验证通过，完整浏览器/连接器/常驻和独立G5待验。"
+    },
+    {
+      "id": "openmaus-assistant_design_918badbced08",
+      "name": "ui-pattern-decision.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/ui-pattern-decision.md",
+      "version": "v1.0",
+      "skills": [
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "已实现动态团队抽屉、实际创建回执、任务输入与键盘/窄窗口；电脑/目标/富成果草案待接入。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_cd19ee129e1a",
+      "name": "工作报告_20261022_个人助理能力与工作台扩展_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261022_个人助理能力与工作台扩展_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "用户要求三个模块都做；72检查、当前DeepSeek实际报告、定时自动触发、偏好记忆及页面证据；上游波动和汇总差异保留。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_a89e043809ae",
+      "name": "工作报告_20261023_对话窗口与连续沟通修复_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261023_对话窗口与连续沟通修复_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "纸色对话窗/文件正文；修复单页语音、终态等待、超时卡、SQLite临时目录及下载路径，79检查、真实两轮对话与合成语音通过。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_fcde545d5b5b",
+      "name": "开源能力复用与产品交互研究_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/开源能力复用与产品交互研究_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "原始10仓库研究保留；最新实现状态表与验收相连，所选组件和未选候选区分。"
+    },
+    {
+      "id": "openmaus-assistant_design_8bd70ee79347",
+      "name": "product-research-decision-20261023.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/product-research-decision-20261023.md",
+      "version": "v1.0",
+      "skills": [
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "当前阅读/附件/连续沟通修订与先前技能应用、电脑现场和成果规则；初始研究草案标明历史。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_67ac2855fbb9",
+      "name": "工作报告_20261023_开源能力与交互研究_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261023_开源能力与交互研究_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "公开调研与本地源码审计；候选未安装、权限未扩张、运行页面未改变；名称歧义待确认。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_dynamic-specialists-v1",
+      "name": "动态小助理接入与验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/动态小助理接入与验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "原生创建、受限动态团队、幂等API、实际派工文件与重启验收；83项通过。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_dynamic-specialists-20261023",
+      "name": "工作报告_20261023_动态小助理创建与派工接通_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261023_动态小助理创建与派工接通_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "动态小助理实现、实际DeepSeek63.098秒通过、首轮失败保留、UI与重启证据，整体接入待继续。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_native-integrations-v1",
+      "name": "原生能力与应用接入验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/原生能力与应用接入验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "原生Skills/MCP、Chrome/CUA、DOCX/XLSX、原生例行/目标与多邮箱日历接入；99项通过，真实账户/当前模型目标503等边界分别记录。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_native-integrations-20261023",
+      "name": "工作报告_20261023_原生能力与应用接入_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261023_原生能力与应用接入_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "99项回归、87.751秒实际模型网页与二进制成果、旧版409/启动等待修复、日常身份保持和未完成范围。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_interaction-vision-v1",
+      "name": "持续沟通与图片识别验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/持续沟通与图片识别验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "104项、自然对话后台派工/零点击文件、持续语音、真实图片识别和Whale账号invalid token导致上传500未修复。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_interaction-vision-20261023",
+      "name": "工作报告_20261023_持续沟通与图片识别_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261023_持续沟通与图片识别_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "持续沟通/附件/卡片分层、本机5217恢复及185条历史保留，真实视觉成功和图片派工500分别记录。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_voice-permissions-hierarchy-v1",
+      "name": "降噪与权限交互验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/降噪与权限交互验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "本地Silero、逐助理设备授权和三层交互；10-25补修正式页CSP/WASM语音启动，109项及25秒倾听/重开通过；识别回复和上游图片500仍区分。"
+    },
+    {
+      "id": "openmaus-assistant_design_voice-permissions-hierarchy-v1",
+      "name": "voice-permissions-hierarchy-decision.md",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "ui-system/voice-permissions-hierarchy-decision.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "用户Bot截图驱动列表/详情/过程，局部token、状态、窄窗与按助理设备模式。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_voice-permissions-hierarchy-20261024",
+      "name": "工作报告_20261024_降噪授权与交互层次_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261024_降噪授权与交互层次_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "降噪误触发原因、真实模型与隔离原生权限证据、三层UI、5217恢复及未完成范围。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_system-status-recovery-v1",
+      "name": "系统状态与失败恢复验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/系统状态与失败恢复验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "系统状态中心、最近消息幂等重试、后台监督进程有限退避重启及真实配置边界。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_system-status-recovery-20261025",
+      "name": "工作报告_20261025_状态中心与失败恢复_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261025_状态中心与失败恢复_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "状态抽屉、失败重试、后台监督重启的实现与验证；全量首次107/108，单独重跑失败测试通过。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_voice-startup-csp-20261025",
+      "name": "工作报告_20261025_语音启动CSP修复_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261025_语音启动CSP修复_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "正式页面CSP阻止ONNX/WASM导致点语音报错；仅补WASM许可与中文错误处理，109项和正式页倾听25秒/重开通过，配置身份保持。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_name-latency-v1",
+      "name": "助理改名与请求耗时验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/助理改名与请求耗时验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "主/小助理对话与界面改名接原生profile，真实模型通过；约12秒等待模型网关，旧能力说明投影去重、首字计时；113项通过，原消息/配置保留，J盘ENOSPC经无损压缩恢复。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_name-latency-20261025",
+      "name": "工作报告_20261025_助理改名与请求耗时_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261025_助理改名与请求耗时_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "正式改名小蕊并接通改名工具/表单；真实模型及113项检查通过，旧消息417条哈希一致；远端首帧约12秒、127KB工具目录，未承诺稳定提速。"
+    },
+    {
+      "id": "openmaus-assistant_knowledge_conversation-settings-v1",
+      "name": "对话式设置与语音操作验收_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "knowledge",
+      "path": "docs/对话式设置与语音操作验收_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "语音/对话执行改名、语速音色、显示朗读偏好、明确记忆和提醒管理；同源认证SSE与原子保存，inputSource兼容旧任务；真实模型和116项检查通过。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_conversation-settings-20261025",
+      "name": "工作报告_20261025_对话式设置与语音操作_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261025_对话式设置与语音操作_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory",
+        "product-ui-system"
+      ],
+      "template": null,
+      "knowledge": "对话设置与语音来源实现、真实模型多项修改和浏览器即时同步证据；116项通过，正常重启保留420条消息和原配置，真人耳机体验待反馈。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_vision-upload-diagnosis-20261028",
+      "name": "工作报告_20261028_视觉上传失败定位_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261028_视觉上传失败定位_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "闲鱼工作视觉请求7次中5成功2失败；美国网关同期分别确认40003 invalid token和HTTP202网页登录验证，均被包装为截图上传500。只读定位，未改账号/部署、未续签、未重放用户工作；恢复及按键失败另待处理。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_vision-auto-retry-20261028",
+      "name": "工作报告_20261028_视觉自动重试_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261028_视觉自动重试_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "用户批准视觉请求自动补试两次，1/2秒退避、90秒窗口、取消与错误分类；23项及真实合成图首试通过。正常重启保留223条主会话/151条工作消息、身份记忆和权限。未强制换号、未改账号池/续签，历史失败任务不自动重放。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_model-web-verification-retry-20261028",
+      "name": "工作报告_20261028_文字模型网页验证自动重试_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261028_文字模型网页验证自动重试_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "Saturn 上游网页验证 503 在无输出时最多自动重发两次，给账号调度器换号机会；已有文字/推理/工具事件不重放，测试8/8与ReachAI契约5/5通过，未改账号池/部署。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_goofish-stall-20261029",
+      "name": "工作报告_20261029_闲鱼任务卡点定位_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261029_闲鱼任务卡点定位_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "闲鱼操作停在Chrome后台按键拒绝后，未按foreground提示恢复并重复读窗口13次，最后视觉400结束；本机服务当时退出，正常恢复后529条消息与历史末尾不变，未重放任务，400和服务退出原因未确认。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_automatic-recovery-20261029",
+      "name": "工作报告_20261029_自动恢复与防空转_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261029_自动恢复与防空转_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "视觉上游400补试最多两次；原生press_key明确后台未送达且full许可时前台补试一次，内部refused归失败，重复观察四次暂停；54回归与19最终专项通过，正常重启保留529条记录、记忆与授权，历史任务未重放。"
+    },
+    {
+      "id": "openmaus-assistant_design_ui-oss-comparison-20261031",
+      "name": "界面与开源方案对比_v1.0.html",
+      "project": "openmaus-assistant",
+      "domain": "design",
+      "path": "docs/界面与开源方案对比_v1.0.html",
+      "version": "v1.0",
+      "skills": [],
+      "template": null,
+      "knowledge": "10-31 调研：不换底座（OpenClaw 仅长期观察），升级锁定在 3 个上游文件 12 处替换与 9 个上游内部模块引用；界面偏离效果图（右侧面板 28.7% vs 12.7%），CSS 402 色值/17 字号/41 !important；优先接入上游自带组件，人物方向借 Lobe Vidol/TalkingHead/ElevenLabs UI，工作区方向借 Muse/Eigent/assistant-ui。第5节：工作中补充——主对话忙时上游已插话（steer），但补充送不到已交出的工作（无补充工具、liveWorkNote 不列主助理自己的工作、目标执行中 409），建议加“补充到工作”工具、工作页输入框和插入/排队/新开回执。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_ui-oss-comparison-20261031",
+      "name": "工作报告_20261031_界面与开源方案对比_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261031_界面与开源方案对比_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "只调研不改代码：HTML 对比页与两份调研笔记；无 git、evidence/ 1,618 项未清理为新增风险；改版五步待用户确认后另走门控，main.md SHA 不变。追加：核对工作中补充与另开任务的现状与缺口。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_rectification-20261031",
+      "name": "工作报告_20261031_整改第1-3步_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261031_整改第1-3步_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "整改第1–3步已替换到工作区：git 基线 ae47bc2→2df8e61；测试临时目录改系统临时目录、1,479 个旧目录已归档；App.tsx 拆分；CSS 合并为 tokens.css+app.css；首页按效果图重排（记录卡 13%）；工作中补充（/companion/work/:id/add、works/add_to_work、目标排队）。测试 135 过、1 环境失败（VM 无 Chrome）。待用户重启服务并用真实模型试补充。main.md SHA 不变。"
+    },
+    {
+      "id": "openmaus-assistant_worklog_round2-20261101",
+      "name": "工作报告_20261101_同类功能补齐与抽屉整理_v1.0.md",
+      "project": "openmaus-assistant",
+      "domain": "worklog",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261101_同类功能补齐与抽屉整理_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "对照 Grok Bot/Muse/上游/OpenClaw/Hermes 列 16 项缺口；新增搜索、回复与表情、附带文档、通知中心、特殊卡片（密钥只存服务端）、今天与早间简报、说话风格；抽屉改浮动卡片；重新排版、按需加载、dist 旧包归档、23 个一次性脚本归档。底座升级因 VM 连不上 GitHub 未做。git 2df8e61→e334c53，测试 138 过 1 环境失败。待用户重启并实测。"
+    },
+    {
+      "id": "openmaus-assistant_github_main",
+      "name": "项目专属文档入口",
+      "project": "openmaus-assistant",
+      "domain": "知识库",
+      "path": "Agent文档/main.md",
+      "version": "v1.0",
+      "skills": [],
+      "template": null,
+      "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_github_仓库使用说明",
+      "name": "仓库使用说明",
+      "project": "openmaus-assistant",
+      "domain": "知识库",
+      "path": "docs/仓库使用说明.md",
+      "version": "v1.0",
+      "skills": [],
+      "template": null,
+      "knowledge": null
+    }
+  ]
+}

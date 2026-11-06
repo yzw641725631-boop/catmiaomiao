@@ -1,0 +1,7 @@
+openmausbot webhook receiver on http://127.0.0.1:21453
+openmausbot open-source edition (enterprise layer present but OMB_LICENSE_KEY is not set)
+local requests: owner trust (desktop app)
+brand: default
+openmausbot server on http://127.0.0.1:21452
+[omb-turn] bot=64b47275-395b-4195-8388-f5bbf3c64889 text="合成问候一：你好，只回复“你好”，不用工具。\n\n[本地助理能力说明，2026-10-25 21:38:41 Asia/Shanghai]\n你" images=0 depth=0 card=false
+browser: Google Chrome 155 (installed)

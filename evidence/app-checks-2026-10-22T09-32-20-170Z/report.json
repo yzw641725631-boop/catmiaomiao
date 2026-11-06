@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-22",
+  "timeZone": "Asia/Shanghai",
+  "node": "v24.19.0",
+  "scope": "isolated local contract checks; no real credentials or microphones",
+  "stages": [
+    {
+      "name": "typecheck",
+      "args": [
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "exitCode": 2,
+      "signal": null,
+      "elapsedMs": 1758,
+      "log": "typecheck.log"
+    }
+  ],
+  "passed": false
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-22",
+  "project": "openmaus-assistant",
+  "documents": 7,
+  "checkedLinks": 22,
+  "testsPassed": 24,
+  "typecheck": true,
+  "build": true,
+  "servedBuildMatchesEvidence": true,
+  "mainP0Unchanged": true,
+  "unrelatedIndexPreserved": true,
+  "emptyCredentialSettingsScreenshot": true
+}

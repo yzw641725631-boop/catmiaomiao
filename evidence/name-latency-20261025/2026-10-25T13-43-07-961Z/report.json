@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-25T13:43:13.849Z",
+  "scope": "Isolated native request accounting only; no real cloud request",
+  "modelInstanceId": "5e30cb57-167d-4c2f-b953-6e6b5bd500b1",
+  "catalog": {
+    "count": 84,
+    "bytes": 126776,
+    "largest": [
+      {
+        "name": "computer_click",
+        "bytes": 7052
+      },
+      {
+        "name": "computer_get_window_state",
+        "bytes": 6580
+      },
+      {
+        "name": "computer_type_text",
+        "bytes": 5677
+      },
+      {
+        "name": "computer_hotkey",
+        "bytes": 5636
+      },
+      {
+        "name": "computer_press_key",
+        "bytes": 4684
+      },
+      {
+        "name": "computer_scroll",
+        "bytes": 4652
+      },
+      {
+        "name": "computer_launch_app",
+        "bytes": 4583
+      },
+      {
+        "name": "computer_drag",
+        "bytes": 4184
+      },
+      {
+        "name": "computer_page",
+        "bytes": 4162
+      },
+      {
+        "name": "computer_double_click",
+        "bytes": 3835
+      },
+      {
+        "name": "computer_right_click",
+        "bytes": 3761
+      },
+      {
+        "name": "computer_verify_state",
+        "bytes": 2837
+      }
+    ]
+  },
+  "samples": [],
+  "historyBytesSaved": 4037
+}

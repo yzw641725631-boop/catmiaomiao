@@ -1,0 +1,27 @@
+✔ native validated MCP calls recover an undelivered key, expose refusal and terminate a real observation loop (483.2102ms)
+✔ native recovery retains schema rejection and live permission revocation (451.4928ms)
+✔ a proven undelivered native keystroke retries foreground exactly once under a live full grant (2.8491ms)
+✔ ask mode, revoked access, custom tools and uncertain failures never receive automatic foreground input (0.4985ms)
+✔ cancellation during a rejected keystroke prevents the foreground attempt (0.4877ms)
+✔ nested native refusal and business failure are failures even when transport succeeded (1.0407ms)
+✔ repeated identical observations warn then stop despite fresh snapshot tokens or screenshot options (0.6156ms)
+✔ a changed page or a successful action resets observations while failed actions do not (0.8517ms)
+✔ changing screenshot pixels count as progress even when the accessibility tree is unchanged (0.7769ms)
+✔ repeated browser consent refusals are bounded without auto granting or changing the request (0.5534ms)
+✔ vision upload retries preserve the exact continuation and return only the eventual complete response (9.9539ms)
+✔ vision retries stop after two additional attempts and preserve the original upload error (14.6417ms)
+✔ vision upstream 400/502/503 errors can recover without reissuing a user message (46.323ms)
+✔ repeated upstream 400 errors stop after three attempts without retrying local input validation (15.0286ms)
+✔ vision authentication, verification, invalid input, timeout and incomplete responses are not retried (0.8253ms)
+✔ cancelling before a vision call or during backoff prevents any subsequent attempts (15.2481ms)
+✔ a response arriving after cancellation is never delivered to the native harness (0.5483ms)
+✔ the retry window prevents restarting a long vision call even when attempt slots remain (0.7984ms)
+✔ a native image job recovers from upstream 400 after its file action without replaying that action (7244.3649ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9933.7928

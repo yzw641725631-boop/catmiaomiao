@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-28T16:39:26.802294+00:00",
+  "localOnly": true,
+  "node": "v24.22.1",
+  "relatedRegression": {
+    "passed": 54,
+    "failed": 0,
+    "log": "regression.log"
+  },
+  "finalRecoveryTests": {
+    "passed": 19,
+    "failed": 0,
+    "log": "final-recovery.log"
+  },
+  "typecheck": {
+    "passed": true
+  },
+  "restart": {
+    "mode": "live",
+    "provider": "reachai",
+    "activeTasks": 0,
+    "serverPid": 74212,
+    "supervisorPid": 78516,
+    "preserved": {
+      "messageCount": true,
+      "messageHash": true,
+      "lastMessageAt": true,
+      "memoryHash": true,
+      "identityHash": true,
+      "session": true,
+      "settings": true,
+      "teamRegistryPreserved": true
+    },
+    "messageCount": 529,
+    "helperCount": 3,
+    "workThreadCount": 9,
+    "unchangedSettings": {
+      "companion-settings.json": true,
+      "native-capabilities.json": true,
+      "folder-access.json": true
+    },
+    "teamRegistryAppend": {
+      "originalPrefixPreserved": true,
+      "expectedRestoreReceipt": true,
+      "appendedRows": 1
+    }
+  },
+  "userTaskReplayed": false,
+  "remoteAccountPoolChanged": false,
+  "upstreamSourceModified": false,
+  "limitations": [
+    "Real foreground keyboard recovery was validated with synthetic MCP tools, not private desktop input.",
+    "Unknown upstream 400 can still fail after bounded retries; account rotation is controlled by upstream."
+  ],
+  "passed": true
+}

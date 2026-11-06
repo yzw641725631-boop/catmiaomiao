@@ -1,0 +1,14 @@
+abilities     px=0 els=224/224 missing=0 extra=0 styleDiffs=0
+chat          px=50 els=199/199 missing=0 extra=0 styleDiffs=0
+feed          px=0 els=177/177 missing=0 extra=0 styleDiffs=0
+goals         px=0 els=223/223 missing=0 extra=0 styleDiffs=0
+home          px=0 els=177/177 missing=0 extra=0 styleDiffs=0
+memory        px=0 els=232/232 missing=0 extra=0 styleDiffs=0
+pure          px=0 els=93/93 missing=0 extra=0 styleDiffs=0
+settings      px=0 els=265/265 missing=0 extra=0 styleDiffs=0
+skills        px=0 els=242/242 missing=0 extra=0 styleDiffs=0
+team          px=0 els=248/248 missing=0 extra=0 styleDiffs=0
+work-done     px=21 els=199/199 missing=0 extra=0 styleDiffs=0
+work-running  px=21 els=205/205 missing=0 extra=0 styleDiffs=0
+workbench     px=0 els=177/177 missing=0 extra=0 styleDiffs=0
+TOTAL by prop []

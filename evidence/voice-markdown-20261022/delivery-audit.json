@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-22T13:01:40.817Z",
+  "passed": true,
+  "checks": "evidence/app-checks-2026-10-22T12-48-18-487Z/report.json",
+  "testCount": 42,
+  "realPipeline": "evidence/voice-markdown-20261022/live-pipeline-2026-10-22T12-50-00-760Z.json",
+  "realAsrEndReceived": true,
+  "replyDecoded": true,
+  "browser": {
+    "observedAt": "2026-10-22T12:57:19.564Z",
+    "url": "http://127.0.0.1:5217/",
+    "cells": 15,
+    "clientWidth": 285,
+    "rows": 5,
+    "scrollWidth": 440,
+    "tableWidth": 440,
+    "screenshot": "markdown-table-final.jpg",
+    "replyPlaybackScreenshot": "reply-playing.jpg",
+    "deliveryScreenshot": "markdown-table-delivery.jpg",
+    "playbackVerified": "HTMLAudio onplaying / speaking observed via browser; screenshot reply-playing.jpg"
+  },
+  "preview": {
+    "origin": "http://127.0.0.1:5217/",
+    "mode": "live",
+    "provider": "reachai",
+    "chiefId": "7e60e8a5-b4ad-4d80-ad17-a7d97e8f740b",
+    "companionThreadId": "5ac4c945-ac16-4dfb-8d3e-70a1115c8a7d"
+  },
+  "sourceHashes": {
+    "app/src/App.tsx": "9883a62ed3dc86df3b3294ec9111e71990006c1ecb9e342896cb00487939dc97",
+    "app/src/voiceActivity.ts": "7ab9938051a382c88e53e257091026a5d734ef80236f0f4cb590c428b6bdaa2b",
+    "app/src/voiceCapture.ts": "97d47daee7a358b34c8fd954b5f3b00c1e2a4f87272c81e965bed56912252c22",
+    "app/src/voiceReplies.ts": "fe281534d9054bd77b2455473ab7b81aff1cbec0e04a7c9da454ce58360a4d58",
+    "app/src/realtimeSpeech.ts": "eddd8847a0621bceef007157c1c11f63bbafaf1995d26284d6815ab69c6bf527",
+    "app/src/MessageMarkdown.ts": "d91299ac42cadeeb8103d1364cf2d861f06b041d6e9abfaf241ffe08b917b072",
+    "app/src/speech.ts": "4ad3b8a5f6081a5e25fc415446d6047fb3ee83f0cd72bf2b048f044b241dd538",
+    "app/src/Settings.tsx": "2ad637881fde9b91e5b6eb1201747b9342c8cc17b84ddf591cc92b659390965c",
+    "app/src/style.css": "9f3b275b5f75c0440ea4c968c504b6e26b810cfa925668d777906e71b06de7b8",
+    "app/src/useCompanion.ts": "d8126c8487034b9171471b0d974f9aaffcfb77723ab5bc3a27366f8573ad84b9",
+    "app/package.json": "0d3399c71b8ec98d9c19c66cf2746dae1ea54b91fea0ef72edc25d7120fb4848",
+    "app/pnpm-lock.yaml": "056adb7a9211fcbdc6f2f8f7d7db7c994542416db412aa231422ca0ef97f8494",
+    "adapters/realtime-asr.mjs": "780fd57b6b6ccc17638ce4a9deb57102ee26078bcd97f95bc8fc8ad180e44f6b"
+  },
+  "upstreamHead": "97a4a1cab96ab3d07b0c7dac275f69afc6e7a8dc",
+  "upstreamUnchanged": true,
+  "mainSha": "413986ce2afd8062d050150674e42d2c0ff1834a1c6396456703c1146b526030",
+  "mainUnchanged": true,
+  "unrelatedIndexPreserved": true,
+  "registeredReport": "Agent文档/openmaus-assistant_工作日志/工作报告_20261022_语音自动发送与Markdown修复_v1.0.md",
+  "limits": [
+    "Human microphone capture and room noise were not tested",
+    "Browser playback state verified; physical speaker audibility not measured",
+    "Independent G5 signature and G7 release not claimed",
+    "Earlier chief summary accuracy issue remains"
+  ]
+}

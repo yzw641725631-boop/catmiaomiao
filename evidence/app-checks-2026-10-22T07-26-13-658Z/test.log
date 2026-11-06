@@ -1,0 +1,32 @@
+✔ browser bridge rejects cross-origin, unknown host, missing capability and arbitrary admin proxy (27.111ms)
+✔ same send id dispatches one work thread, real helpers write a file and chat continues (8966.5454ms)
+✔ stopping the selected slow work does not stop a separate chat (1255.7322ms)
+✔ memory writes retain optimistic conflict handling across the bridge (109.2054ms)
+✔ compatible API route, secret masking, ASR and restart persistence use an isolated live runtime (12546.6936ms)
+✔ PCM resampling preserves duration and chunk continuity at 48k and 44.1k (23.7109ms)
+✔ PCM limits samples and encodes signed little endian (0.7862ms)
+✔ message patches replace by stable id, preserving chronological order (1.5107ms)
+✔ delta never overwrites a persisted terminal answer from the same turn (0.5102ms)
+✔ a task error removes only its own streaming text (0.2223ms)
+✔ speech skips code and visible captions remain short (0.4283ms)
+✔ message links retain authorized Windows file references and refuse executable schemes (0.5341ms)
+✔ ReachAI drives native delegation, speech, protected realtime ASR and persistent identity (15099.475ms)
+✔ ReachAI selections, credentials and unsupported images fail explicitly (3.0655ms)
+✔ native SSE preserves tool argument fragments, reasoning, usage and the next tool-result turn (108.5119ms)
+✔ model EOF and error events never become a successful completion (34.1944ms)
+✔ catalog strips connection secrets, ASR sends native JSON and TTS validates business errors (88.6418ms)
+✔ realtime transcript merges each final once and waits for the end receipt (26.513ms)
+✔ cancelling while microphone permission is pending stops a late stream without opening a socket (0.3283ms)
+✔ cancelling a connecting socket closes it if the handshake completes late (5.3788ms)
+✔ an invalid recognition frame releases the microphone and rejects late results (0.8379ms)
+✔ stopping during preparation prevents late audio from starting (32.2749ms)
+✔ barge-in pauses audio, releases its URL and prevents subsequent chunks (6.8522ms)
+✔ streaming MP3 starts playback before the response finishes downloading (2.1446ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15931.2962

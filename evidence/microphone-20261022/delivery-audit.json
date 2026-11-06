@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-22T14:16:05.443Z",
+  "passed": true,
+  "testCount": 62,
+  "checksPath": "evidence/app-checks-2026-10-22T14-07-46-020Z/report.json",
+  "recoveryPath": "evidence/microphone-20261022/model-recovery-2026-10-22T14-13-14-024Z.json",
+  "verificationObservation": "evidence/microphone-20261022/provider-verification-observation.json",
+  "sourceHashes": {
+    "app/src/App.tsx": "45ec00fdc2732ec8f11a7260013f7cc52e3b566f8c0d6f04b48d7d61746181bf",
+    "app/src/continuousVoice.ts": "8aedd03228ac578e730b20270c2650961894887c312237868852f409828be221",
+    "app/src/voiceReplies.ts": "d77a5a8014ba9ee6723dbb637860424699e7f132936341cb4e807dde5503d1c8",
+    "app/src/voiceCapture.ts": "84796427b2dbaaee604dd865441dd9008733f3a5491a90f22733788474e11fb3",
+    "app/src/voiceActivity.ts": "cf4a3c12e5e727296a901b5d82b10e54c451e814ce15142e78d5b1e9193250b1",
+    "app/src/realtimeSpeech.ts": "eeaec0c8505a84ca9c2c6a82bf797394c360211de01ea8f61a312681eae1c355",
+    "app/src/microphone.ts": "452717a4aa133eabe8b7eada6caa34728d1b55ccb551c2153f9c795fd9782792",
+    "app/src/MicrophoneSettings.tsx": "e50d2e898b3cb60cd7f5ea9af545083955182f4a42d711d36d3e69f24a066a0a",
+    "adapters/reachai.mjs": "333ee4d3d3d9656d546af1fcfca320eeac7c1e1c49c0122ec9be925dfe880eb0",
+    "adapters/runtime.mjs": "2d02a9481e6588f7e5c79bbb407c4373fbd65d6529b43181a413cb100380bf61",
+    "adapters/realtime-asr.mjs": "3b979cf0d7fe768c4062529684e8be7529bfdc0624a153facf5ebc1a58a03c4c"
+  },
+  "preview": {
+    "origin": "http://127.0.0.1:5217/",
+    "mode": "live",
+    "provider": "reachai",
+    "selectedInstance": "5e30cb57-167d-4c2f-b953-6e6b5bd500b1",
+    "chiefId": "7e60e8a5-b4ad-4d80-ad17-a7d97e8f740b",
+    "companionThreadId": "5ac4c945-ac16-4dfb-8d3e-70a1115c8a7d",
+    "screenshot": "continuous-voice-delivery.jpg",
+    "continuousVoice": "listening observed in actual page DOM; typing switch and 2 second hint visible"
+  },
+  "upstreamHead": "97a4a1cab96ab3d07b0c7dac275f69afc6e7a8dc",
+  "upstreamUnchanged": true,
+  "mainSha": "413986ce2afd8062d050150674e42d2c0ff1834a1c6396456703c1146b526030",
+  "mainUnchanged": true,
+  "unrelatedIndexPreserved": true,
+  "limits": [
+    "Upstream web verification not resolved; later single request passed, not sustained stability",
+    "Human headset single turn confirmed by user; continuous two-round and noise acceptance pending",
+    "No raw human recordings saved",
+    "Chief summary accuracy gap remains",
+    "Independent G5 signoff and G7 release not claimed"
+  ]
+}

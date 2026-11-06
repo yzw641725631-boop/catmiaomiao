@@ -1,0 +1,103 @@
+{
+  "at": "2026-10-25T14:39:11.440Z",
+  "timeZone": "Asia/Shanghai",
+  "passed": true,
+  "scope": "Authorized local G2/G4 development and verification; no production release",
+  "checks": {
+    "path": "evidence/app-checks-2026-10-25T14-33-38-861Z/report.json",
+    "tests": 116,
+    "typecheck": true,
+    "build": true
+  },
+  "realModel": {
+    "path": "evidence/conversation-settings-20261025/live-2026-10-25T14-16-13-578Z.json",
+    "passed": true,
+    "isolated": true,
+    "elapsedMs": 13593
+  },
+  "syntheticVoiceContext": {
+    "path": "evidence/conversation-settings-20261025/voice-context-2026-10-25T14-23-15-505Z.json",
+    "passed": true,
+    "humanAudioCaptured": false
+  },
+  "browser": {
+    "isolated": "evidence/conversation-settings-20261025/browser-acceptance.json",
+    "daily": "evidence/conversation-settings-20261025/daily-browser-acceptance.json",
+    "currentAsset": [
+      "/assets/index-C69ktYC3.js"
+    ]
+  },
+  "daily": {
+    "before": "evidence/conversation-settings-20261025/daily-final-before.json",
+    "after": "evidence/conversation-settings-20261025/daily-final-after.json",
+    "preserved": true,
+    "messageCount": 420,
+    "chiefName": "小蕊",
+    "voiceReady": true
+  },
+  "upstream": {
+    "revision": "97a4a1cab96ab3d07b0c7dac275f69afc6e7a8dc",
+    "clean": true
+  },
+  "mainUnchanged": true,
+  "documentation": {
+    "added": [
+      "projects/openmaus-assistant/docs/对话式设置与语音操作验收_v1.0.md",
+      "Agent文档/openmaus-assistant_工作日志/工作报告_20261025_对话式设置与语音操作_v1.0.md"
+    ],
+    "previousEntriesPreserved": 630
+  },
+  "sources": [
+    {
+      "path": "adapters/conversation-settings.mjs",
+      "sha256": "cd10c94b756fe11cb1b121662b04ab10babed15aaccdf4f59c7859cf3211e376"
+    },
+    {
+      "path": "adapters/runtime.mjs",
+      "sha256": "1f4ea2a5f4afff90bc3bb5ea5b83a29b70cec4e7a9b463db865380e2a4a431e7"
+    },
+    {
+      "path": "adapters/assistant-services.mjs",
+      "sha256": "724145ec496275566801d226a0be58930e111bafe964cda8a2b5e2d1faee8db9"
+    },
+    {
+      "path": "adapters/routine-tool-policy.mjs",
+      "sha256": "6fd723c90602df23c764de3c4ed5d4c108ddf64071f537d3337fb125fe9d81e4"
+    },
+    {
+      "path": "adapters/server.mjs",
+      "sha256": "97e7ba8afe07cd47d068f0c9a5d62c726c99460653bead153bac2311c7c89a54"
+    },
+    {
+      "path": "app/src/types.ts",
+      "sha256": "31b2ca3b60a309f73705b3ce91ebacc5ea0db75b9c41990734c97f8ed59253e5"
+    },
+    {
+      "path": "app/src/useCompanion.ts",
+      "sha256": "9f5a71ced202debf834fa74cf667654909953d1ee272e984a8bc3da4e8b2eeb9"
+    },
+    {
+      "path": "app/src/App.tsx",
+      "sha256": "f09bc1500d7b0362055bed212b02dd7e7f6e228ef1b6763769b8e76cf5644211"
+    },
+    {
+      "path": "app/src/ReachaiSettings.tsx",
+      "sha256": "0e7fa7468122bb971ae13362886e3e2d1a9ce5d9b042e93d7fdda4679b2817cc"
+    },
+    {
+      "path": "app/tests/conversation-settings.test.mjs",
+      "sha256": "17c8355d2d9a7adea31cf23b13494f7157a75e89d3a9d8523b948e077a0ab9e1"
+    },
+    {
+      "path": "app/tests/interaction-vision.test.mjs",
+      "sha256": "8b1761b50c261e4335c41c88a94ce15347abda4607db8b43d7702ccf733470f0"
+    }
+  ],
+  "boundaries": {
+    "allFeaturesConversational": false,
+    "humanHeadsetAcceptanceThisRevision": false,
+    "stableCloudLatencyGuaranteed": false,
+    "independentG5Signed": false,
+    "G7Published": false
+  }
+}

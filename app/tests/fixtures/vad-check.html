@@ -1,0 +1,35 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>本地人声检测隔离验收</title><style>body{font:15px system-ui;max-width:850px;margin:50px auto;background:#f8f7f3;color:#393b31}button{padding:13px 20px}pre{white-space:pre-wrap;line-height:1.8}</style><h1>本地人声检测</h1><p>使用合成噪声和预制测试语音；不打开硬件麦克风，不上传音频。</p><button id="run">运行人声与噪声验证</button><pre id="result">等待开始</pre><script type="module">
+import {createSpeechGate} from '/src/speechGate.ts';
+const result=document.querySelector('#result'),button=document.querySelector('#run');
+button.addEventListener('click',async()=>{
+ button.disabled=true;const rows=[];result.textContent='正在加载本地模型…';
+ try{
+  const response=await fetch('./vad-speech.mp3'),bytes=await response.arrayBuffer();
+  for(const name of ['风扇底噪','键盘与碰撞','短促摩擦','正常语音','轻声语音']){
+   const context=new AudioContext();await context.resume();const rate=context.sampleRate;
+   const decoded=await context.decodeAudioData(bytes.slice(0));
+   let speechEnd=decoded.length;while(speechEnd>0&&Math.abs(decoded.getChannelData(0)[speechEnd-1])<.008)speechEnd--;
+   const voice=name.includes('语音'),duration=voice?speechEnd/rate+3.4:4;
+   const buffer=context.createBuffer(1,Math.ceil(duration*rate),rate),data=buffer.getChannelData(0);
+   let seed=84;const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)|0;return (seed>>>0)/4294967296*2-1;};
+   for(let i=0;i<data.length;i++){
+    const t=i/rate;
+    if(name==='风扇底噪')data[i]=random()*.025+Math.sin(t*2*Math.PI*95)*.025;
+    else if(name==='键盘与碰撞'){const phase=t%0.45;data[i]=phase<.025?random()*.55*Math.exp(-phase*160):0;}
+    else if(name==='短促摩擦'){const phase=t%1;data[i]=phase<.16?random()*.15:0;}
+    else if(i>=rate*.4&&i<rate*.4+speechEnd)data[i]=(decoded.getChannelData(0)[i-Math.floor(rate*.4)]||0)*(name==='轻声语音'?.12:1);
+   }
+   const destination=context.createMediaStreamDestination(),source=context.createBufferSource();source.buffer=buffer;source.connect(destination);
+   const events=[];let started=0;
+   const gate=createSpeechGate({speech:()=>events.push({event:'speech',atMs:Math.round(performance.now()-started)}),end:()=>events.push({event:'end',atMs:Math.round(performance.now()-started)})});
+   await gate.start(destination.stream,context);started=performance.now();source.start();
+   await new Promise(resolve=>source.onended=resolve);await new Promise(resolve=>setTimeout(resolve,250));
+   const row={name,durationMs:Math.round(duration*1000),events,hasSpeech:gate.hasSpeech,expectedSpeech:voice};rows.push(row);await gate.stop();destination.stream.getTracks().forEach(t=>t.stop());await new Promise(r=>setTimeout(r,50));await context.close();
+   result.textContent=JSON.stringify({status:'running',rows},null,2);
+  }
+  const cancelContext=new AudioContext();await cancelContext.resume();const cancelStream=cancelContext.createMediaStreamDestination().stream;let late=0;const cancelled=createSpeechGate({speech:()=>late++,end:()=>late++});const starting=cancelled.start(cancelStream,cancelContext);await new Promise(resolve=>setTimeout(resolve,10));cancelStream.getTracks().forEach(track=>track.stop());await cancelled.stop();await starting;await cancelContext.close();rows.push({name:'初始化期间取消',events:[],hasSpeech:late>0,expectedSpeech:false});
+  const passed=rows.every(row=>row.hasSpeech===row.expectedSpeech&&(!row.expectedSpeech||row.events.some(event=>event.event==='end')));
+  result.textContent=JSON.stringify({status:'complete',passed,rows},null,2);result.dataset.complete='true';result.dataset.passed=String(passed);
+ }catch(error){result.textContent=JSON.stringify({status:'error',error:String(error),rows},null,2);result.dataset.complete='true';result.dataset.passed='false';}finally{button.disabled=false;}
+});
+</script></html>

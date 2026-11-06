@@ -1,0 +1,14 @@
+openmausbot webhook receiver on http://127.0.0.1:21879
+openmausbot open-source edition (enterprise layer present but OMB_LICENSE_KEY is not set)
+local requests: owner trust (self-hosted default)
+local requests: OMB_DEV_TRUST_LOCAL_BROWSER=1: browsers on this machine act as the owner (development only)
+brand: default
+openmausbot server on http://127.0.0.1:21878
+[omb-turn] bot=7b1bf093-1caa-4cce-a190-977ad05a3ad2 text="Delegate this synthetic evaluation to both helpers." images=0 depth=0 card=false
+browser engine: unavailable (agent-browser is not installed on this machine yet); bots get no browser tools until it is installed
+[omb-turn] bot=fa6eec0e-5393-4024-a0f8-2dda7c1f7bdb text="[OpenMausBot assignment 29fa1481-7b03-44a0-987d-019a24917b25 from @Com" images=0 depth=1 card=true
+[omb-turn] bot=9a4fede9-0ae4-4af6-ac54-16b06a5a048d text="[OpenMausBot assignment 5c9b24d7-e263-4f9b-bbb7-2924010f9206 from @Com" images=0 depth=1 card=true
+[omb-turn] bot=7b1bf093-1caa-4cce-a190-977ad05a3ad2 text="CHAT_WHILE_WORKING: can we continue chatting?" images=0 depth=0 card=false
+[omb-turn] bot=7b1bf093-1caa-4cce-a190-977ad05a3ad2 text="Your downstream room requests have settled. Review the results against" images=0 depth=1 card=true
+[omb-turn] bot=52e0012e-8ea7-496b-8838-be6720e84063 text="STOP_TARGET" images=0 depth=0 card=false
+[omb-turn] bot=52e0012e-8ea7-496b-8838-be6720e84063 text="KEEP_TARGET" images=0 depth=0 card=false

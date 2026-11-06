@@ -1,0 +1,258 @@
+<div id="immersive-assistant-layout">
+  <div class="viz-carousel" aria-label="沉浸式助理的两种界面状态" data-previous-label="上一种状态" data-next-label="下一种状态">
+    <section data-variant="陪伴状态" aria-label="陪伴状态，人物居中，记录浮在右上角">
+      <div class="ia-scene" data-scene="companion" aria-label="陪伴界面 · 布局示意">
+        <header class="ia-header">
+          <div class="ia-brand"><span class="ia-monogram">M</span><span>我的助理<span class="ia-small ia-sub">与你相伴</span></span></div>
+          <span class="ia-preview">概念预览 · 演示记录</span>
+        </header>
+        <div class="ia-backdrop" aria-hidden="true"><div class="ia-window"></div><div class="ia-horizon"></div></div>
+        <div class="ia-person" aria-label="居中的人物形象占位，人物风格待定">
+          <div class="ia-portrait" aria-hidden="true"><div class="ia-hair-back"></div><div class="ia-neck"></div><div class="ia-face"><div class="ia-hair"></div><span class="ia-eye ia-eye-left"></span><span class="ia-eye ia-eye-right"></span><span class="ia-nose"></span><span class="ia-mouth"></span></div><div class="ia-torso"><div class="ia-collar"></div><div class="ia-seam"></div></div><div class="ia-arm ia-arm-left"></div><div class="ia-arm ia-arm-right"></div></div>
+          <div class="ia-person-name">主助理<span class="ia-small">人物形象示意</span></div>
+        </div>
+        <aside class="ia-timeline" aria-label="右上角对话与工作时间线">
+          <div class="ia-panel-heading"><span>对话与工作</span><button type="button" class="ia-icon-button cursor-interaction" data-action="collapse" aria-label="收起记录" aria-expanded="true"><i data-lucide="minus" aria-hidden="true"></i></button></div>
+          <div class="ia-panel-body">
+            <div class="ia-record"><span class="ia-small ia-label">你 · 刚刚</span><p>帮我调整语音打断，再核对一下接口。</p></div>
+            <div class="ia-record"><span class="ia-small ia-label">主助理</span><p>我让两位小助理处理，完成后向你汇报。</p></div>
+            <button type="button" class="ia-change cursor-interaction" data-action="detail" aria-expanded="false"><span class="ia-change-title"><i data-lucide="file-code-2" aria-hidden="true"></i><span>修改了 1 个文件</span><i data-lucide="chevron-right" aria-hidden="true"></i></span><span class="ia-small ia-sub">voice-controller.ts · 测试待运行</span></button>
+            <div class="ia-detail" hidden>
+              <div class="ia-detail-heading"><span>修改明细</span><span class="ia-small">+1 −1</span></div>
+              <div class="ia-file-name">voice-controller.ts</div>
+              <pre class="ia-code"><code><span class="ia-deleted">− stopAllTasks();</span><span class="ia-added">+ stopSpeech();</span></code></pre>
+              <p class="ia-small ia-sub">打断播报时，后台任务继续执行。</p>
+              <div class="ia-verification"><i data-lucide="circle-dashed" aria-hidden="true"></i><span>测试待运行</span></div>
+            </div>
+            <div class="ia-local-message" aria-live="polite" hidden></div>
+          </div>
+        </aside>
+        <div class="ia-team" aria-label="小助理的后台任务">
+          <span class="ia-small ia-label">后台协作</span>
+          <button type="button" class="ia-worker cursor-interaction" data-worker="code" aria-label="查看编程助理的任务"><span class="ia-worker-icon"><i data-lucide="code-2" aria-hidden="true"></i></span><span>编程助理<span class="ia-small ia-sub" data-worker-status>处理语音打断</span></span><span class="ia-status-dot" aria-hidden="true"></span></button>
+          <button type="button" class="ia-worker cursor-interaction" data-worker="research" aria-label="查看检索助理的任务"><span class="ia-worker-icon"><i data-lucide="search" aria-hidden="true"></i></span><span>检索助理<span class="ia-small ia-sub">核对接口资料</span></span><span class="ia-status-dot" aria-hidden="true"></span></button>
+        </div>
+        <div class="ia-dialogue" aria-live="polite"><span class="ia-small ia-speaking-state">在这里，听你说。</span><p>工作交给他们，我们可以继续聊。</p></div>
+        <form class="ia-composer" aria-label="文字与语音对话演示"><button type="button" class="ia-mic cursor-interaction" data-action="mic" aria-label="开始语音状态演示" aria-pressed="false"><i data-lucide="mic" aria-hidden="true"></i></button><input aria-label="演示消息" placeholder="和我说说，接下来想做什么…" autocomplete="off"><button type="submit" class="ia-send cursor-interaction" aria-label="把演示消息显示到记录"><i data-lucide="arrow-up" aria-hidden="true"></i></button></form>
+        <div class="ia-bottom-actions"><button type="button" class="ia-quiet-button cursor-interaction" data-action="quiet" aria-pressed="false"><i data-lucide="scan" aria-hidden="true"></i><span>纯净视图</span></button></div>
+      </div>
+    </section>
+    <section data-variant="工作状态" aria-label="工作状态，人物保留在左侧舞台，右侧展开修改记录" hidden>
+      <div class="ia-scene ia-detail-open" data-scene="work" aria-label="工作界面 · 布局示意">
+        <header class="ia-header"><div class="ia-brand"><span class="ia-monogram">M</span><span>我的助理<span class="ia-small ia-sub">与你协作</span></span></div><span class="ia-preview">概念预览 · 演示记录</span></header>
+        <div class="ia-backdrop" aria-hidden="true"><div class="ia-window"></div><div class="ia-horizon"></div></div>
+        <div class="ia-person" aria-label="阅读修改时仍然可见的人物形象占位"><div class="ia-portrait" aria-hidden="true"><div class="ia-hair-back"></div><div class="ia-neck"></div><div class="ia-face"><div class="ia-hair"></div><span class="ia-eye ia-eye-left"></span><span class="ia-eye ia-eye-right"></span><span class="ia-nose"></span><span class="ia-mouth"></span></div><div class="ia-torso"><div class="ia-collar"></div><div class="ia-seam"></div></div><div class="ia-arm ia-arm-left"></div><div class="ia-arm ia-arm-right"></div></div><div class="ia-person-name">主助理<span class="ia-small">人物形象示意</span></div></div>
+        <aside class="ia-timeline" aria-label="对话与代码修改记录">
+          <div class="ia-panel-heading"><span>对话与工作</span><button type="button" class="ia-icon-button cursor-interaction" data-action="collapse" aria-label="收起记录" aria-expanded="true"><i data-lucide="minus" aria-hidden="true"></i></button></div>
+          <div class="ia-panel-body">
+            <div class="ia-record"><span class="ia-small ia-label">你 · 刚刚</span><p>语音打断，只停止说话就行。</p></div>
+            <div class="ia-record"><span class="ia-small ia-label">主助理</span><p>改动已经放在这里，测试结果随后补充。</p></div>
+            <button type="button" class="ia-change cursor-interaction" data-action="detail" aria-expanded="true"><span class="ia-change-title"><i data-lucide="file-code-2" aria-hidden="true"></i><span>修改了 1 个文件</span><i data-lucide="chevron-right" aria-hidden="true"></i></span><span class="ia-small ia-sub">编程助理 · 查看修改前后</span></button>
+            <div class="ia-detail">
+              <div class="ia-detail-heading"><span>修改明细</span><span class="ia-small">+1 −1</span></div><div class="ia-file-name">voice-controller.ts</div>
+              <pre class="ia-code"><code><span class="ia-context">function interruptVoice() {</span><span class="ia-deleted">−  stopAllTasks();</span><span class="ia-added">+  stopSpeech();</span><span class="ia-context">}</span></code></pre>
+              <p class="ia-small ia-sub">打断播报时，后台任务继续执行。</p>
+              <div class="ia-verification"><i data-lucide="circle-dashed" aria-hidden="true"></i><span>测试待运行</span><button type="button" class="ia-inline-button cursor-interaction" data-action="pause-task">暂停这项任务</button></div>
+            </div>
+            <div class="ia-local-message" aria-live="polite" hidden></div>
+          </div>
+        </aside>
+        <div class="ia-team" aria-label="后台小助理"><span class="ia-small ia-label">后台协作</span><button type="button" class="ia-worker cursor-interaction" data-worker="code"><span class="ia-worker-icon"><i data-lucide="code-2" aria-hidden="true"></i></span><span>编程助理<span class="ia-small ia-sub" data-worker-status>等待运行测试</span></span><span class="ia-status-dot" aria-hidden="true"></span></button></div>
+        <div class="ia-dialogue" aria-live="polite"><span class="ia-small ia-speaking-state">随时可以继续说。</span><p>你看修改，我在这里。</p></div>
+        <form class="ia-composer" aria-label="文字与语音对话演示"><button type="button" class="ia-mic cursor-interaction" data-action="mic" aria-label="开始语音状态演示" aria-pressed="false"><i data-lucide="mic" aria-hidden="true"></i></button><input aria-label="演示消息" placeholder="继续说，或者追加要求…" autocomplete="off"><button type="submit" class="ia-send cursor-interaction" aria-label="把演示消息显示到记录"><i data-lucide="arrow-up" aria-hidden="true"></i></button></form>
+        <div class="ia-bottom-actions"><button type="button" class="ia-quiet-button cursor-interaction" data-action="quiet" aria-pressed="false"><i data-lucide="scan" aria-hidden="true"></i><span>纯净视图</span></button></div>
+      </div>
+    </section>
+  </div>
+</div>
+<style>
+#immersive-assistant-layout .ia-scene{--ia-ground:light-dark(#eeeae2,#151c1e);--ia-ink:light-dark(#293d3a,#e0e8e3);--ia-muted:light-dark(#5c6b65,#a6b9b0);--ia-panel:light-dark(#faf9f5,#243032);--ia-line:light-dark(#d9ddd5,#42504e);--ia-soft:light-dark(#e6ebe3,#303e3d);--ia-deep:light-dark(#35584f,#93b7a5);--ia-deep-text:light-dark(#f4f7f2,#182823);--ia-hair:light-dark(#414d49,#303e3d);--ia-skin:light-dark(#cbbdaf,#bcb5a4);--ia-skin-shadow:light-dark(#b1a798,#9c9c89);--ia-coat:light-dark(#85958a,#647b6e);--ia-coat-shadow:light-dark(#657c6e,#435b50);--ia-red:light-dark(#963f38,#e9b4ad);--ia-red-bg:light-dark(#f3e5df,#413432);--ia-green:light-dark(#286549,#b7d9c0);--ia-green-bg:light-dark(#e1eee1,#2b4338);position:relative;isolation:isolate;width:100%;height:660px;overflow:hidden;color:var(--ia-ink);background:var(--ia-ground);font:14px/1.5 'Segoe UI','Microsoft YaHei',sans-serif;border-radius:16px}
+#immersive-assistant-layout .ia-scene *{box-sizing:border-box}
+#immersive-assistant-layout .ia-scene button,#immersive-assistant-layout .ia-scene input{font:inherit}
+#immersive-assistant-layout .ia-scene button{color:inherit}
+#immersive-assistant-layout .ia-scene [hidden]{display:none!important}
+#immersive-assistant-layout .ia-small{font-size:12px;font-weight:400}
+#immersive-assistant-layout .ia-sub{display:block;color:var(--ia-muted)}
+#immersive-assistant-layout .ia-label{color:var(--ia-muted)}
+#immersive-assistant-layout .ia-header{position:absolute;z-index:6;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 108px 0 26px}
+#immersive-assistant-layout .ia-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;font-weight:500}
+#immersive-assistant-layout .ia-monogram{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--ia-line);border-radius:50%;font:500 17px/1 Georgia,serif}
+#immersive-assistant-layout .ia-preview{font-size:11px;color:var(--ia-muted);white-space:nowrap}
+#immersive-assistant-layout .ia-backdrop{position:absolute;inset:0;z-index:-1;overflow:hidden}
+#immersive-assistant-layout .ia-window{position:absolute;left:13%;top:15%;width:31%;height:47%;border:1px solid var(--ia-line);border-radius:140px 140px 0 0;background:linear-gradient(155deg,var(--ia-soft),var(--ia-ground));opacity:.65}
+#immersive-assistant-layout .ia-window:after{content:'';position:absolute;inset:0 50% 0 auto;border-left:1px solid var(--ia-line)}
+#immersive-assistant-layout .ia-horizon{position:absolute;top:71%;width:100%;height:1px;background:var(--ia-line);opacity:.7}
+#immersive-assistant-layout .ia-person{position:absolute;z-index:1;top:112px;left:50%;width:228px;transform:translateX(-50%);transition:left .3s ease,opacity .2s ease}
+#immersive-assistant-layout .ia-portrait{position:relative;width:228px;height:340px;transform:scale(var(--ia-person-scale,1));transform-origin:50% 100%}
+#immersive-assistant-layout .ia-hair-back{position:absolute;z-index:0;width:94px;height:121px;left:67px;top:10px;border-radius:47px 43px 35px 31px;background:var(--ia-hair)}
+#immersive-assistant-layout .ia-neck{position:absolute;width:32px;height:42px;top:102px;left:99px;background:var(--ia-skin-shadow);border-radius:0 0 13px 13px}
+#immersive-assistant-layout .ia-face{position:absolute;z-index:2;left:78px;top:24px;width:74px;height:98px;border-radius:38% 39% 47% 47%;background:linear-gradient(110deg,var(--ia-skin),var(--ia-skin-shadow));overflow:hidden}
+#immersive-assistant-layout .ia-hair{position:absolute;top:-19px;left:-12px;width:95px;height:54px;border-radius:50%;background:var(--ia-hair);transform:rotate(-19deg)}
+#immersive-assistant-layout .ia-eye{position:absolute;top:47px;width:6px;height:2px;background:var(--ia-hair);border-radius:3px}
+#immersive-assistant-layout .ia-eye-left{left:16px}#immersive-assistant-layout .ia-eye-right{right:16px}
+#immersive-assistant-layout .ia-nose{position:absolute;left:36px;top:50px;width:3px;height:13px;border-right:1px solid var(--ia-skin-shadow);transform:rotate(8deg)}
+#immersive-assistant-layout .ia-mouth{position:absolute;top:73px;left:29px;width:17px;height:6px;border-bottom:1px solid var(--ia-hair);border-radius:50%}
+#immersive-assistant-layout .ia-torso{position:absolute;z-index:2;left:44px;top:128px;width:142px;height:204px;border-radius:50px 50px 12px 12px;background:linear-gradient(110deg,var(--ia-coat),var(--ia-coat-shadow));overflow:hidden;clip-path:polygon(8% 0,92% 0,100% 100%,0 100%)}
+#immersive-assistant-layout .ia-collar{position:absolute;left:49px;top:-5px;width:44px;height:35px;border-radius:0 0 22px 22px;border:4px solid var(--ia-coat-shadow);border-top:0;background:var(--ia-skin-shadow)}
+#immersive-assistant-layout .ia-seam{position:absolute;left:50%;top:31px;bottom:8px;border-left:1px solid var(--ia-coat-shadow)}
+#immersive-assistant-layout .ia-arm{position:absolute;z-index:1;top:141px;width:43px;height:181px;border-radius:26px 25px 19px 19px;background:var(--ia-coat-shadow)}
+#immersive-assistant-layout .ia-arm-left{left:16px;transform:rotate(8deg)}#immersive-assistant-layout .ia-arm-right{right:14px;transform:rotate(-8deg)}
+#immersive-assistant-layout .ia-person-name{padding-top:15px;text-align:center;font-weight:500;letter-spacing:.04em}
+#immersive-assistant-layout .ia-person-name .ia-small{display:block;margin-top:3px;color:var(--ia-muted);letter-spacing:0}
+#immersive-assistant-layout .ia-timeline{position:absolute;z-index:4;top:89px;right:22px;width:var(--ia-log-width,29%);max-width:330px;border:1px solid var(--ia-line);border-radius:15px;background:var(--ia-panel);box-shadow:0 12px 40px color-mix(in srgb,var(--ia-ink) 6%,transparent);transition:width .3s ease,max-width .3s ease,opacity .2s ease}
+#immersive-assistant-layout .ia-panel-heading{display:flex;justify-content:space-between;align-items:center;min-height:48px;padding:8px 12px 8px 17px;font-weight:500;border-bottom:1px solid var(--ia-line)}
+#immersive-assistant-layout .ia-icon-button{display:grid;place-items:center;width:30px;height:30px;border:0;border-radius:7px;background:transparent}
+#immersive-assistant-layout .ia-icon-button:hover{background:var(--ia-soft)}
+#immersive-assistant-layout .ia-scene svg{width:16px;height:16px;flex-shrink:0}
+#immersive-assistant-layout .ia-panel-body{padding:15px 16px 17px}
+#immersive-assistant-layout .ia-record{margin-bottom:17px}
+#immersive-assistant-layout .ia-record p{margin:5px 0 0;font-size:13px}
+#immersive-assistant-layout .ia-change{display:block;text-align:left;width:100%;padding:12px;border:1px solid var(--ia-line);border-radius:10px;background:var(--ia-soft)}
+#immersive-assistant-layout .ia-change-title{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:500}
+#immersive-assistant-layout .ia-change-title svg:last-child{margin-left:auto}
+#immersive-assistant-layout .ia-change[aria-expanded=true] .ia-change-title svg:last-child{transform:rotate(90deg)}
+#immersive-assistant-layout .ia-change .ia-sub{margin-top:5px;overflow-wrap:anywhere}
+#immersive-assistant-layout .ia-detail{padding-top:17px}
+#immersive-assistant-layout .ia-detail-heading{display:flex;justify-content:space-between;gap:10px;align-items:center;font-weight:500}
+#immersive-assistant-layout .ia-file-name{font:12px/1.5 Consolas,monospace;margin:12px 0 8px;overflow-wrap:anywhere}
+#immersive-assistant-layout .ia-code{font:12px/1.9 Consolas,monospace;border:1px solid var(--ia-line);border-radius:8px;overflow:hidden;margin:0;padding:7px 0;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--ia-ground)}
+#immersive-assistant-layout .ia-code span{display:block;padding:1px 9px}
+#immersive-assistant-layout .ia-deleted{color:var(--ia-red);background:var(--ia-red-bg)}#immersive-assistant-layout .ia-added{color:var(--ia-green);background:var(--ia-green-bg)}
+#immersive-assistant-layout .ia-context{color:var(--ia-muted)}
+#immersive-assistant-layout .ia-verification{display:flex;align-items:center;flex-wrap:wrap;gap:7px;font-size:12px;padding-top:4px}
+#immersive-assistant-layout .ia-inline-button{border:0;background:transparent;text-decoration:underline;text-underline-offset:3px;padding:4px 0;margin-left:auto;font-size:12px}
+#immersive-assistant-layout .ia-team{position:absolute;z-index:3;bottom:141px;left:25px;width:184px;transition:opacity .2s ease}
+#immersive-assistant-layout .ia-worker{display:flex;align-items:center;gap:9px;width:100%;border:0;background:transparent;padding:8px 0;text-align:left;font-size:12px}
+#immersive-assistant-layout .ia-worker-icon{display:grid;place-items:center;flex-shrink:0;width:31px;height:31px;background:var(--ia-panel);border:1px solid var(--ia-line);border-radius:50%}
+#immersive-assistant-layout .ia-worker .ia-sub{margin-top:1px;font-size:11px}
+#immersive-assistant-layout .ia-status-dot{flex-shrink:0;width:5px;height:5px;background:var(--ia-deep);border-radius:50%;margin-left:auto}
+#immersive-assistant-layout .ia-dialogue{position:absolute;z-index:3;left:50%;bottom:94px;transform:translateX(-50%);width:calc(100% - 360px);max-width:550px;text-align:center;transition:left .3s ease,width .3s ease}
+#immersive-assistant-layout .ia-speaking-state{color:var(--ia-muted)}
+#immersive-assistant-layout .ia-dialogue p{font-size:15px;letter-spacing:.02em;margin:6px 0 0}
+#immersive-assistant-layout .ia-composer{position:absolute;z-index:5;bottom:24px;left:50%;transform:translateX(-50%);width:58%;max-width:590px;display:flex;align-items:center;gap:10px;background:var(--ia-panel);border:1px solid var(--ia-line);border-radius:28px;padding:7px;transition:left .3s ease,width .3s ease}
+#immersive-assistant-layout .ia-composer input{flex:1;min-width:0;background:transparent;color:var(--ia-ink);border:0;padding:9px 0;font-size:13px;outline-offset:3px}
+#immersive-assistant-layout .ia-composer input::placeholder{color:var(--ia-muted)}
+#immersive-assistant-layout .ia-mic,#immersive-assistant-layout .ia-send{display:grid;place-items:center;flex-shrink:0;width:38px;height:38px;border:0;border-radius:50%;background:var(--ia-soft)}
+#immersive-assistant-layout .ia-send{background:var(--ia-deep);color:var(--ia-deep-text)}
+#immersive-assistant-layout .ia-mic[aria-pressed=true]{background:var(--ia-deep);color:var(--ia-deep-text)}
+#immersive-assistant-layout .ia-bottom-actions{position:absolute;z-index:5;right:22px;bottom:35px}
+#immersive-assistant-layout .ia-quiet-button{display:flex;align-items:center;gap:6px;border:0;background:transparent;padding:7px 0;font-size:12px;color:var(--ia-muted)}
+#immersive-assistant-layout .ia-local-message{border-top:1px solid var(--ia-line);margin-top:14px;padding-top:12px;font-size:12px;overflow-wrap:anywhere}
+#immersive-assistant-layout .ia-detail-open .ia-person{left:30%}
+#immersive-assistant-layout .ia-detail-open .ia-timeline{width:44%;max-width:475px}
+#immersive-assistant-layout .ia-detail-open .ia-dialogue{left:29%;width:44%;max-width:420px}
+#immersive-assistant-layout .ia-detail-open .ia-composer{left:29%;width:48%;max-width:500px}
+#immersive-assistant-layout .ia-detail-open .ia-team{bottom:173px;width:146px}
+#immersive-assistant-layout .ia-detail-open .ia-worker{padding:6px 0}
+#immersive-assistant-layout .ia-detail-open .ia-team .ia-label{display:none}
+#immersive-assistant-layout .ia-quiet .ia-timeline,#immersive-assistant-layout .ia-quiet .ia-team{opacity:0;visibility:hidden;pointer-events:none}
+#immersive-assistant-layout .ia-quiet .ia-person,#immersive-assistant-layout .ia-quiet .ia-dialogue,#immersive-assistant-layout .ia-quiet .ia-composer{left:50%}
+#immersive-assistant-layout .ia-quiet .ia-dialogue{width:65%}
+#immersive-assistant-layout .ia-quiet .ia-composer{width:58%}
+#immersive-assistant-layout .ia-quiet .ia-header .ia-sub{visibility:hidden}
+#immersive-assistant-layout .ia-timeline.ia-collapsed .ia-panel-heading{border-bottom:0}
+#immersive-assistant-layout .ia-scene[data-hide-team=true] .ia-team{display:none}
+@media(max-width:850px){#immersive-assistant-layout .ia-person{width:190px;top:134px}#immersive-assistant-layout .ia-portrait{transform:scale(calc(var(--ia-person-scale,1) * .84));transform-origin:42% 100%;height:304px}#immersive-assistant-layout .ia-person-name{padding-top:12px}#immersive-assistant-layout .ia-team{width:152px;left:19px}#immersive-assistant-layout .ia-timeline{right:17px}#immersive-assistant-layout .ia-panel-body{padding:12px}#immersive-assistant-layout .ia-dialogue{width:60%;bottom:96px}#immersive-assistant-layout .ia-dialogue p{font-size:14px}#immersive-assistant-layout .ia-detail-open .ia-team{display:none}#immersive-assistant-layout .ia-detail-open .ia-person{left:28%}#immersive-assistant-layout .ia-detail-open .ia-person-name{padding-top:12px}#immersive-assistant-layout .ia-preview{font-size:11px}}
+@media(max-width:640px){#immersive-assistant-layout .ia-scene{height:auto;min-height:1240px;border-radius:12px;display:flex;flex-direction:column;padding:24px 16px 76px;gap:16px}#immersive-assistant-layout .ia-header{position:relative;inset:auto;padding:0 0 0 0;align-items:flex-start;min-height:42px;padding-right:88px;flex-wrap:wrap;gap:7px}#immersive-assistant-layout .ia-preview{display:none}#immersive-assistant-layout .ia-person,#immersive-assistant-layout .ia-detail-open .ia-person{top:84px;left:50%;width:190px}#immersive-assistant-layout .ia-portrait{height:285px;transform:scale(calc(var(--ia-person-scale,1) * .78));transform-origin:42% 100%}#immersive-assistant-layout .ia-person-name{padding-top:10px}#immersive-assistant-layout .ia-backdrop .ia-window{top:10%;left:13%;width:62%;height:25%}#immersive-assistant-layout .ia-horizon{top:36%}#immersive-assistant-layout .ia-timeline,#immersive-assistant-layout .ia-detail-open .ia-timeline{position:relative;top:auto;left:auto;right:auto;order:2;width:100%;max-width:none;margin-top:477px;flex:0 0 auto}#immersive-assistant-layout .ia-record{margin-bottom:12px}#immersive-assistant-layout .ia-panel-body{padding:14px}#immersive-assistant-layout .ia-team,#immersive-assistant-layout .ia-detail-open .ia-team{display:none}#immersive-assistant-layout .ia-dialogue,#immersive-assistant-layout .ia-detail-open .ia-dialogue,#immersive-assistant-layout .ia-quiet .ia-dialogue{top:416px;bottom:auto;left:50%;width:calc(100% - 32px)}#immersive-assistant-layout .ia-composer,#immersive-assistant-layout .ia-detail-open .ia-composer,#immersive-assistant-layout .ia-quiet .ia-composer{top:477px;bottom:auto;left:50%;width:calc(100% - 32px);gap:6px;padding:5px}#immersive-assistant-layout .ia-composer input{font-size:16px}#immersive-assistant-layout .ia-mic,#immersive-assistant-layout .ia-send{width:42px;height:42px}#immersive-assistant-layout .ia-bottom-actions{bottom:18px;right:19px}#immersive-assistant-layout .ia-detail{padding-top:12px}#immersive-assistant-layout .ia-detail p{margin:8px 0}#immersive-assistant-layout .ia-quiet .ia-timeline{display:none}#immersive-assistant-layout .ia-scene.ia-quiet .ia-person{top:220px}#immersive-assistant-layout .ia-scene.ia-quiet .ia-dialogue{top:570px}#immersive-assistant-layout .ia-scene.ia-quiet .ia-composer{top:636px}#immersive-assistant-layout .ia-quiet-button{padding:10px 0}}
+@media(prefers-reduced-motion:reduce){#immersive-assistant-layout .ia-scene *{transition:none!important}}
+</style>
+<script>
+(() => {
+  const root = document.getElementById('immersive-assistant-layout');
+  const scenes = [...root.querySelectorAll('.ia-scene')];
+  const defaults = { personScale: 100, logWidth: 29, showTeam: true };
+  const prefs = { ...defaults };
+  function importState(value) {
+    const incoming = value?.privateContent?.layout || value?.layout;
+    if (!incoming || typeof incoming !== 'object') return;
+    if (Number.isFinite(incoming.personScale)) prefs.personScale = Math.max(90, Math.min(110, incoming.personScale));
+    if (Number.isFinite(incoming.logWidth)) prefs.logWidth = Math.max(25, Math.min(33, incoming.logWidth));
+    if (typeof incoming.showTeam === 'boolean') prefs.showTeam = incoming.showTeam;
+  }
+  importState(window.openai?.widgetState);
+  function paint() {
+    for (const scene of scenes) {
+      scene.style.setProperty('--ia-person-scale', String(prefs.personScale / 100));
+      scene.style.setProperty('--ia-log-width', prefs.logWidth + '%');
+      scene.dataset.hideTeam = String(!prefs.showTeam);
+    }
+  }
+  function save(choice = {}) {
+    if (window.openai?.setWidgetState) window.openai.setWidgetState({
+      modelContent: { layoutProposal: '人物居中、右上对话与工作时间线、底部语音文字输入', personScale: prefs.personScale, logWidth: prefs.logWidth, showTeam: prefs.showTeam, ...choice },
+      privateContent: { layout: { ...prefs } }
+    }).catch(() => {});
+  }
+  for (const scene of scenes) {
+    const timeline = scene.querySelector('.ia-timeline');
+    const panelBody = scene.querySelector('.ia-panel-body');
+    const detail = scene.querySelector('.ia-detail');
+    const detailButton = scene.querySelector('[data-action="detail"]');
+    const stateLine = scene.querySelector('.ia-speaking-state');
+    const localMessage = scene.querySelector('.ia-local-message');
+    function setDetail(open) {
+      detail.hidden = !open;
+      scene.classList.toggle('ia-detail-open', open);
+      detailButton.setAttribute('aria-expanded', String(open));
+      panelBody.hidden = false;
+      timeline.classList.remove('ia-collapsed');
+      scene.querySelector('[data-action="collapse"]').setAttribute('aria-expanded', 'true');
+    }
+    scene.querySelector('[data-action="collapse"]').addEventListener('click', (event) => {
+      const collapsed = !panelBody.hidden;
+      panelBody.hidden = collapsed;
+      timeline.classList.toggle('ia-collapsed', collapsed);
+      scene.classList.toggle('ia-detail-open', !collapsed && !detail.hidden);
+      event.currentTarget.setAttribute('aria-expanded', String(!collapsed));
+      event.currentTarget.setAttribute('aria-label', collapsed ? '展开记录' : '收起记录');
+      save({ lastInteraction: collapsed ? '收起记录' : '展开记录' });
+    });
+    detailButton.addEventListener('click', () => { setDetail(detail.hidden); save({ lastInteraction: detail.hidden ? '收起代码修改' : '展开代码修改' }); });
+    for (const worker of scene.querySelectorAll('[data-worker]')) worker.addEventListener('click', () => {
+      if (worker.dataset.worker === 'code') setDetail(true);
+      else { localMessage.hidden = false; localMessage.textContent = '检索助理 · 正在核对语音接口资料（演示）'; }
+      save({ lastInteraction: worker.dataset.worker === 'code' ? '查看编程小助理' : '查看检索小助理' });
+    });
+    scene.querySelector('[data-action="mic"]').addEventListener('click', (event) => {
+      const active = event.currentTarget.getAttribute('aria-pressed') !== 'true';
+      event.currentTarget.setAttribute('aria-pressed', String(active));
+      event.currentTarget.setAttribute('aria-label', active ? '结束语音状态演示' : '开始语音状态演示');
+      stateLine.textContent = active ? '正在倾听 · 语音状态演示' : '在这里，听你说。';
+    });
+    scene.querySelector('[data-action="quiet"]').addEventListener('click', (event) => {
+      const quiet = scene.classList.toggle('ia-quiet');
+      event.currentTarget.setAttribute('aria-pressed', String(quiet));
+      event.currentTarget.querySelector('span').textContent = quiet ? '恢复面板' : '纯净视图';
+      save({ lastInteraction: quiet ? '纯净视图' : '恢复信息面板' });
+    });
+    const pause = scene.querySelector('[data-action="pause-task"]');
+    if (pause) pause.addEventListener('click', () => {
+      const paused = pause.dataset.paused !== 'true';
+      pause.dataset.paused = String(paused);
+      pause.textContent = paused ? '继续这项任务' : '暂停这项任务';
+      scene.querySelector('[data-worker-status]').textContent = paused ? '已暂停 · 演示' : '等待运行测试';
+      stateLine.textContent = paused ? '编程任务已暂停 · 演示' : '随时可以继续说。';
+    });
+    scene.querySelector('form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const input = scene.querySelector('input');
+      const value = input.value.trim();
+      if (!value) return;
+      localMessage.hidden = false;
+      localMessage.textContent = '你 · 演示消息：' + value;
+      input.value = '';
+      panelBody.hidden = false;
+      timeline.classList.remove('ia-collapsed');
+      stateLine.textContent = '消息已显示在演示记录中';
+    });
+  }
+  paint();
+  window.addEventListener('openai:set_globals', (event) => { importState(event.detail?.globals?.widgetState); paint(); });
+  if (globalThis.Tweak) {
+    const tweak = new Tweak({ container: root, onChange: () => { paint(); save(); } });
+    tweak.addSlider(prefs, 'personScale', { label: '人物大小', min: 90, max: 110, unit: '%', reference: '--ia-person-scale' });
+    tweak.addSlider(prefs, 'logWidth', { label: '陪伴状态的记录宽度', min: 25, max: 33, unit: '%', reference: '--ia-log-width' });
+    tweak.addToggle(prefs, 'showTeam', { label: '显示后台小助理' });
+  }
+})();
+</script>

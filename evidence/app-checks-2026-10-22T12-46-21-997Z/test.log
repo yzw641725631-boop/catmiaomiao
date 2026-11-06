@@ -1,0 +1,69 @@
+✔ ASR relay preserves an end receipt on an already-finalized VAD segment without duplicating text (109.2099ms)
+✔ browser bridge rejects cross-origin, unknown host, missing capability and arbitrary admin proxy (43.2683ms)
+✔ same send id dispatches one work thread, real helpers write a file and chat continues (8991.4641ms)
+✔ stopping the selected slow work does not stop a separate chat (1248.8328ms)
+✔ memory writes retain optimistic conflict handling across the bridge (110.2415ms)
+✔ compatible API route, secret masking, ASR and restart persistence use an isolated live runtime (12366.5714ms)
+✔ the actual acceptance summary renders GFM as a table and keeps fenced source as code (37.2821ms)
+✔ GFM checklists and strike-through work without executing HTML or unsafe links (3.9716ms)
+✔ PCM resampling preserves duration and chunk continuity at 48k and 44.1k (36.2376ms)
+✔ PCM limits samples and encodes signed little endian (1.139ms)
+✔ message patches replace by stable id, preserving chronological order (1.4096ms)
+✔ delta never overwrites a persisted terminal answer from the same turn (0.461ms)
+✔ a task error removes only its own streaming text (0.2404ms)
+✔ speech skips code and visible captions remain short (0.4307ms)
+✔ message links retain authorized Windows file references and refuse executable schemes (0.5467ms)
+✔ helper approval cards retain the actual owning bot/thread and the parent work evidence (0.6275ms)
+✔ native helper questions remain visible until the helper thread actually receives the answer (0.2994ms)
+✖ ReachAI drives native delegation, speech, protected realtime ASR and persistent identity (9298.614ms)
+✔ ReachAI selections, credentials and unsupported images fail explicitly (3.7653ms)
+✔ native SSE preserves tool argument fragments, reasoning, usage and the next tool-result turn (129.2745ms)
+✔ model EOF and error events never become a successful completion (35.3787ms)
+✔ catalog strips connection secrets, ASR sends native JSON and TTS validates business errors (105.2892ms)
+✔ realtime transcript merges each final once and waits for the end receipt (43.6349ms)
+✔ cancelling while microphone permission is pending stops a late stream without opening a socket (0.5586ms)
+✔ cancelling a connecting socket closes it if the handshake completes late (9.5056ms)
+✔ an invalid recognition frame releases the microphone and rejects late results (0.979ms)
+✔ stopping during preparation prevents late audio from starting (58.0608ms)
+✔ barge-in pauses audio, releases its URL and prevents subsequent chunks (13.1986ms)
+✔ streaming MP3 starts playback before the response finishes downloading (4.2348ms)
+✔ utterance detection tolerates short pauses, finishes once and never treats silence as speech (16.2551ms)
+✔ voice replies bind to the original user send and survive a terminal patch with the same message id (0.8084ms)
+✔ realtime VAD final automatically finishes, waits for end and submits exactly once (44.3485ms)
+✔ file capture stops after speech and silence, transcribes once and releases the microphone (7.1884ms)
+✔ no-speech and explicit cancellation do not send audio or late transcriptions (4.3852ms)
+✔ assigned file tools archive replacements, require the exact prior hash and preserve Unicode (28.0671ms)
+✔ separate helper instances cannot overwrite or validate while another mutation holds the job lock (12.7785ms)
+✔ file boundaries reject Windows escape paths, secrets, junctions, hardlinks and oversized text (26.0227ms)
+✔ validation receipts reflect real failures and syntax checks do not execute model code (198.9064ms)
+✔ the native turn hook is pinned and MCP stdio uses only its trusted assigned root (115.2326ms)
+✔ native delegation ancestry grants only the matching job root and never ordinary chat or foreign bots (3.4884ms)
+✔ failed work resumes in its original folder, deduplicates retries and restores its evidence after restart (8.3596ms)
+✔ helper answers use the native question destination, stay in the same job and reject unrelated messages (5.5885ms)
+ℹ tests 42
+ℹ suites 0
+ℹ pass 41
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14865.5602
+
+✖ failing tests:
+
+test at tests\reachai-live.test.mjs:18:1
+✖ ReachAI drives native delegation, speech, protected realtime ASR and persistent identity (9298.614ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 1
+  
+      at TestContext.<anonymous> (file:///J:/agent_project/projects/openmaus-assistant/app/tests/reachai-live.test.mjs:113:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,90 @@
+{
+  "at": "2026-10-25T13:40:41.199Z",
+  "scope": "Two isolated synthetic greetings with the real selected provider; desktop catalog only, zero tool executions. Small sample, no speed guarantee.",
+  "modelInstanceId": "5e30cb57-167d-4c2f-b953-6e6b5bd500b1",
+  "catalog": {
+    "count": 84,
+    "bytes": 126776,
+    "largest": [
+      {
+        "name": "computer_click",
+        "bytes": 7052
+      },
+      {
+        "name": "computer_get_window_state",
+        "bytes": 6580
+      },
+      {
+        "name": "computer_type_text",
+        "bytes": 5677
+      },
+      {
+        "name": "computer_hotkey",
+        "bytes": 5636
+      },
+      {
+        "name": "computer_press_key",
+        "bytes": 4684
+      },
+      {
+        "name": "computer_scroll",
+        "bytes": 4652
+      },
+      {
+        "name": "computer_launch_app",
+        "bytes": 4583
+      },
+      {
+        "name": "computer_drag",
+        "bytes": 4184
+      },
+      {
+        "name": "computer_page",
+        "bytes": 4162
+      },
+      {
+        "name": "computer_double_click",
+        "bytes": 3835
+      },
+      {
+        "name": "computer_right_click",
+        "bytes": 3761
+      },
+      {
+        "name": "computer_verify_state",
+        "bytes": 2837
+      }
+    ]
+  },
+  "samples": [
+    {
+      "variant": "before",
+      "requestBytes": 154600,
+      "messageBytes": 27745,
+      "attempt": 1,
+      "result": "completed",
+      "elapsedMs": 12586,
+      "headersMs": 11959,
+      "firstOutputMs": 11959,
+      "firstContentMs": 12584
+    },
+    {
+      "variant": "after",
+      "requestBytes": 154600,
+      "messageBytes": 27745,
+      "attempt": 1,
+      "result": "failed",
+      "status": 401,
+      "upstreamStatus": 401,
+      "code": "REACHAI_REQUEST_FAILED",
+      "outputStarted": false,
+      "elapsedMs": 5438,
+      "headersMs": 5437,
+      "firstOutputMs": null,
+      "firstContentMs": null,
+      "errorCode": "REACHAI_REQUEST_FAILED"
+    }
+  ],
+  "comparisonValid": false,
+  "comparisonNote": "Initial reconstruction retained identical outbound requests, so these samples are not a before/after optimization benchmark. Preserve the successful first-frame timing and the upstream 401; corrected catalog-only accounting is in 2026-10-25T13-43-07-961Z/report.json."
+}

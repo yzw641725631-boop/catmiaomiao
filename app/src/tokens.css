@@ -1,0 +1,154 @@
+/* Design tokens: the one set used by app.css. Primitive colors are named family-step; the step is about ten times
+   (100 - CIELAB lightness), so a bigger number is darker. Components use a semantic name where one fits. */
+:root {
+  /* Type */
+  --font-ui: "Segoe UI","Microsoft YaHei",sans-serif; /* used by :root in app.css */
+  --text-10: 10px;
+  --text-11: 11px;
+  --text-12: 12px;
+  --text-13: 13px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-18: 18px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-28: 28px;
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+  --radius-composer: 28px; /* input pill: reads round at one row, keeps corners as the text grows */
+  --radius-round: 50%;
+
+  /* Primitive colors */
+  --amber-170: #e1cc9c;
+  --amber-400: #9b907c;
+  --amber-430: #948671;
+  --amber-470: #a2774f;
+  --amber-490: #95743d;
+  --amber-560: #716751;
+  --amber-560-rgb: 113 103 81;
+  --amber-565: #8b5e34;
+  --amber-590: #7d5b2b;
+  --amber-830: #342718;
+  --amber-830-rgb: 52 39 24;
+  --ivory-10: #fcfbf8;
+  --ivory-10-rgb: 252 251 248;
+  --ivory-30: #faf7f1;
+  --ivory-30-rgb: 250 247 241;
+  --ivory-35: #fff7e7;
+  --ivory-50: #f0f1e9;
+  --ivory-55: #f6f1e7;
+  --ivory-60: #f0eee9;
+  --ivory-70: #f1ead7;
+  --ivory-75: #f5e8e2;
+  --ivory-80: #eee8df;
+  --ivory-85: #f1e8da;
+  --red-500: #a56954;
+  --red-570: #915544;
+  --red-630: #913f32;
+  --rose-170: #e4c9be;
+  --sage-50: #f0f0e6;
+  --sage-60: #e9eee5;
+  --sage-60-rgb: 233 238 229;
+  --sage-70: #e9eddf;
+  --sage-90: #dfe9d5;
+  --sage-95: #e8e5dc;
+  --sage-100: #e0e3d8;
+  --sage-110: #dce2d0;
+  --sage-140: #d5dacb;
+  --sage-270: #a2ba85;
+  --sage-270-rgb: 162 186 133;
+  --sage-380: #929987;
+  --sage-390: #87977a;
+  --sage-395: #8a9680;
+  --sage-410: #89917e;
+  --sage-440: #85867d;
+  --sage-450: #7b886c;
+  --sage-450-rgb: 123 136 108;
+  --sage-470: #758268;
+  --sage-475: #7a806a;
+  --sage-510: #647b49;
+  --sage-515: #6f775d;
+  --sage-520: #6a7759;
+  --sage-540: #65734e;
+  --sage-545: #5f744e;
+  --sage-550: #646f55;
+  --sage-555: #5e6f50;
+  --sage-580: #586849;
+  --sage-630: #4c5c3f;
+  --sage-635: #4e5c45;
+  --sage-660: #46543c;
+  --sage-660-rgb: 70 84 60;
+  --sage-690: #4c493e;
+  --sage-690-rgb: 76 73 62;
+  --sage-720: #39472f;
+  --sage-725: #3a4534;
+  --sage-725-rgb: 58 69 52;
+  --sage-760: #393b33;
+  --sage-760-rgb: 57 59 51;
+  --sage-770: #39372f;
+  --sage-770-rgb: 57 55 47;
+  --stone-80: #e9e7e1;
+  --stone-80-rgb: 233 231 225;
+  --stone-85: #f1e6da;
+  --stone-90: #eae5da;
+  --stone-95: #f2e1d8;
+  --stone-120: #e1dbd0;
+  --stone-150: #dcd3c5;
+  --stone-155: #d8d4cc;
+  --stone-180: #d5cabc;
+  --stone-310: #b3a898;
+  --stone-330: #aaa194;
+  --stone-370: #a09787;
+  --stone-380: #a19481;
+  --stone-390: #9a9285;
+  --stone-400: #998e7d;
+  --stone-410: #938e82;
+  --stone-430: #91897b;
+  --stone-440: #8a857a;
+  --stone-455: #8a7f6d;
+  --stone-460: #8a8176;
+  --stone-465: #89816d;
+  --stone-480: #827a6a;
+  --stone-540: #756c61;
+  --stone-690: #4d493d;
+  --stone-720: #484236;
+  --stone-740: #423c32;
+  --stone-740-rgb: 66 60 50;
+  --stone-780: #3b342a;
+  --stone-780-rgb: 59 52 42;
+  --stone-810: #302e29;
+  --stone-810-rgb: 48 46 41;
+  --stone-850: #29251f;
+  --stone-850-rgb: 41 37 31;
+  --white: #ffffff;
+  --white-rgb: 255 255 255;
+
+  /* Semantic colors */
+  --surface: var(--ivory-30); /* panels, drawers, cards */
+  --conversation-surface: var(--ivory-10); /* chat window, reading surfaces and document paper */
+  --message-assistant: var(--ivory-60); /* assistant bubble fill */
+  --message-user: var(--sage-60); /* user bubble fill */
+  --text-primary: var(--stone-850); /* body text */
+  --text-conversation: var(--stone-810); /* chat text */
+  --text-muted: var(--stone-540); /* secondary text */
+  --text-conversation-muted: var(--stone-440); /* chat meta text and captions */
+  --hairline: var(--stone-80); /* dividers inside reading surfaces */
+  --primary: var(--sage-660); /* primary action fill, selected state */
+  --danger: var(--red-630); /* errors, destructive actions */
+  --success: var(--primary); /* same green as primary */
+  --warning: #82551e; /* amber-800 in design-tokens.md; no current use */
+  --info: #365b73; /* blue-800 in design-tokens.md */
+  --focus: var(--info); /* 2px focus ring */
+  --text-secondary: #62594f; /* design-tokens.md; no current use */
+  --floating-surface: rgb(var(--ivory-30-rgb) / 0.94); /* non-critical floating panels */
+  --border: rgba(64,58,51,0.13); /* default 1px borders */
+
+  /* Elevation */
+  --shadow-panel: 0 12px 40px rgb(var(--stone-850-rgb) / 0.1);
+}

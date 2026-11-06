@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-21",
+  "mode": "built-in image_gen",
+  "reference": "approved-visual-concept-v1.png",
+  "background": {
+    "prompt": "Use case: precise-object-edit. Asset type: production background layer for an immersive desktop personal assistant. Edit target: the attached approved visual concept. Remove ONLY all UI text, logos, floating panels, chat history, buttons, subtitles, input bar, helper icons; also remove the woman AND her central armchair and cushion. Reconstruct the empty room naturally behind them. Preserve the same warm private study: arched large window at left, pale oak shelves, greige plaster wall at right, few plants, rug, soft late afternoon sunlight from left, exact perspective and photorealistic materials. Center should have quiet natural room depth suitable for compositing the seated woman later. Keep the right wall uncluttered for a UI overlay. Wide 16:9 image, no humans, no chair at center, no typography, no overlays, no watermark. This is the scene background layer, not a UI mockup.",
+    "path": "../app/public/assets/study-v1.png",
+    "generatedFrom": "C:/Users/Administrator/.codex/generated_images/01a15e76-fdc0-7d42-89e1-a220387b14d8/exec-14a84a0a-cc95-4db0-95c0-df670f250b9a.png"
+  },
+  "portrait": {
+    "prompt": "Use case: background-extraction, identity-preserve. Asset type: transparent PNG portrait layer for the immersive personal-assistant app. Edit target: the approved concept image. Extract ONLY the exact same adult East Asian woman and the same ivory boucle armchair with dark sage cushion. Preserve her approved face identity, hairstyle, gentle slight smile, natural skin, small hoop earrings, sage blazer over ivory knit, pose with hands relaxed on lap, fabric details, proportions and soft warm sunlight coming from upper left. Remove ALL background, floor, window, shelves, wall and ALL UI, typography, icons, subtitle/input overlays. Reconstruct the portions of lap, chair and clothing obscured by those UI overlays, consistently. Use a genuinely transparent alpha background, not checkerboard paint and not a solid color. Portrait 2:3 composition, entire head and armchair silhouette in frame with modest clear padding; upper body seated, lap/lower clothing can continue to natural bottom crop, no new props. Woman must remain exactly recognizable as the reference, no new face, no stylistic/cartoon changes, no glamour retouching. Photorealistic cutout, finely clean hair edges, no outer glow, no white halo, no text, no watermark. This is a layer asset for compositing, not an interface mockup.",
+    "path": "../app/public/assets/companion-v1.png",
+    "generatedFrom": "C:/Users/Administrator/.codex/generated_images/01a15e76-fdc0-7d42-89e1-a220387b14d8/exec-9ba79617-deb2-4d1c-b40b-181653f56cde.png"
+  }
+}

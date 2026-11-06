@@ -1,0 +1,120 @@
+{
+  "at": "2026-10-22T22:47:13.720Z",
+  "milestone": "dynamic specialist creation and delegation",
+  "overallResearchIntegration": "in progress; user explicitly requested remaining integrations",
+  "checks": {
+    "report": "evidence/app-checks-2026-10-22T22-36-36-618Z/report.json",
+    "tests": 83,
+    "passed": true,
+    "finalDraftWordingTypecheckAndBuild": true
+  },
+  "live": {
+    "at": "2026-10-22T22:31:11.869Z",
+    "passed": true,
+    "isolated": true,
+    "approvals": [
+      {
+        "botId": "154a6d50-6aab-4747-b1de-f1b8a6a05418",
+        "threadId": "085c84b7-fef9-4512-9d22-87ed00ffe64a",
+        "requestId": "64e97417-bb15-447b-ac73-7d87126375d6",
+        "tool": "workspace_write_file"
+      },
+      {
+        "botId": "154a6d50-6aab-4747-b1de-f1b8a6a05418",
+        "threadId": "085c84b7-fef9-4512-9d22-87ed00ffe64a",
+        "requestId": "e70f2d60-ff60-4593-aa27-3213f13d8926",
+        "tool": "workspace_check_file"
+      },
+      {
+        "botId": "e7d2bf9e-5d09-4549-8f9f-5ed102fa482f",
+        "threadId": "f4e91751-3093-466b-9ac1-0bc2b3c1d02f",
+        "requestId": "b634f742-72f1-4f52-b42b-830b22a8d4c5",
+        "tool": "workspace_read_file"
+      }
+    ],
+    "rootDir": "J:\\agent_project\\projects\\openmaus-assistant\\runtime\\isolated-team-2026-10-22T22-31-11-868Z",
+    "instanceId": "5e30cb57-167d-4c2f-b953-6e6b5bd500b1",
+    "platformCatalogReadable": true,
+    "chiefId": "e7d2bf9e-5d09-4549-8f9f-5ed102fa482f",
+    "companionThreadId": "cca5524b-9a25-447c-bff5-764c92f800b4",
+    "helperId": "154a6d50-6aab-4747-b1de-f1b8a6a05418",
+    "creation": {
+      "receiptId": "5ab299a9-0a8e-41ac-aabc-f7711db42de6",
+      "requestId": "72a8ac2b-042d-48e7-b95b-0e85fc4dfaaa",
+      "state": "applied",
+      "replySucceeded": true
+    },
+    "workThreadId": "f4e91751-3093-466b-9ac1-0bc2b3c1d02f",
+    "elapsedMs": 63098,
+    "modelErrors": [],
+    "finalReplyId": "7a1da772-ee45-4a05-ae26-1598ea97329c",
+    "helperThreads": [
+      "085c84b7-fef9-4512-9d22-87ed00ffe64a"
+    ],
+    "file": "J:\\agent_project\\projects\\openmaus-assistant\\runtime\\isolated-team-2026-10-22T22-31-11-868Z\\live-harness\\companion-work\\dd527cef-8563-4b66-9ebf-05b938457442\\new-assistant.md",
+    "bytes": 173,
+    "sha256": "b7af333de26163987b57496d2909a95423c79e3e0a3ad4e3ac9b4ed75e0b5f39",
+    "evidence": {
+      "threadId": "f4e91751-3093-466b-9ac1-0bc2b3c1d02f",
+      "files": [
+        {
+          "path": "new-assistant.md",
+          "before": "",
+          "after": "# 合成资料核对结果\n\n- 编号：SAMPLE-84\n- 预算：120 元\n- 追加：30 元\n- 算式：120 元 + 30 元 = 150 元\n\n结论：总额应为 150 元，核对一致。\n",
+          "status": "added",
+          "diff": "--- new-assistant.md\n+++ new-assistant.md\n+# 合成资料核对结果\n+\n+- 编号：SAMPLE-84\n+- 预算：120 元\n+- 追加：30 元\n+- 算式：120 元 + 30 元 = 150 元\n+\n+结论：总额应为 150 元，核对一致。\n+"
+        }
+      ],
+      "tests": [
+        {
+          "command": "utf8: new-assistant.md",
+          "exitCode": 0,
+          "stdout": "Valid UTF-8, 173 bytes; SHA-256 b7af333de26163987b57496d2909a95423c79e3e0a3ad4e3ac9b4ed75e0b5f39",
+          "stderr": "",
+          "path": "new-assistant.md",
+          "sha256": "b7af333de26163987b57496d2909a95423c79e3e0a3ad4e3ac9b4ed75e0b5f39",
+          "current": true
+        }
+      ],
+      "coverage": "仅包含本次指定目录内捕获的文本文件变化；未运行的测试不标记通过。"
+    }
+  },
+  "firstFailedRunRetained": "live-2026-10-22T22-26-45-995Z.json",
+  "ui": {
+    "manualCreation": true,
+    "persistentMembersAfterRestart": 5,
+    "viewport": [
+      1280,
+      720
+    ],
+    "narrow": [
+      390,
+      844
+    ],
+    "horizontalOverflow": false,
+    "focusTrap": true,
+    "escapeRestore": true,
+    "assignFocus": "TEXTAREA",
+    "finalDraft": "请让资料校对助理帮我",
+    "screenshots": [
+      "team-final.jpg",
+      "team-narrow.jpg",
+      "team-created-before-focus-fix.jpg"
+    ]
+  },
+  "mainHash": "413986ce2afd8062d050150674e42d2c0ff1834a1c6396456703c1146b526030",
+  "upstreamClean": true,
+  "foreignProjectIndexUnchanged": true,
+  "archive": "归档/openmaus-assistant/dynamic-specialists-20261023",
+  "gates": {
+    "G2_G4": "existing approved native assistant scope",
+    "G5": "developer checks completed; independent final signoff pending",
+    "G7": "not requested"
+  },
+  "fileHashes": {
+    "projects/openmaus-assistant/README.md": "307bc55c015afc080c1cc08187504d0aa30acd18aa994446a8eb5f98efa3cd71",
+    "projects/openmaus-assistant/docs/开源能力复用与产品交互研究_v1.0.md": "9cb0ee48abbf95cda6de1caf77c54d3057664a4de5cd32a945eadf0442100df0",
+    "Agent文档/openmaus-assistant_知识库/项目概览_v1.0.md": "d583c41c49af4643d9f113b97cb69fd84df9db8863995e777ed26d64ede4d3ea",
+    "Agent文档/doc_index.json": "77d527ad340ff309638880d7d51543773bc6f8bbe1551724806b223da8607ff0"
+  }
+}

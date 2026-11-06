@@ -1,0 +1,2 @@
+✔ DOCX and XLSX are real binaries, reopened content matches literal Chinese/numeric cells (2957.6881ms)
+✔ generated artifacts preserve existing bytes and reject traversal, unsupported cells and changed hashes (165.4962ms)

@@ -1,0 +1,218 @@
+{
+  "at": "2026-10-23T15:26:24.769Z",
+  "timeZone": "Asia/Shanghai",
+  "scope": "local revision and read-only integration of the requested owned US vision endpoint",
+  "upstream": {
+    "revision": "97a4a1cab96ab3d07b0c7dac275f69afc6e7a8dc",
+    "clean": true
+  },
+  "mainSha256": "413986ce2afd8062d050150674e42d2c0ff1834a1c6396456703c1146b526030",
+  "checks": {
+    "path": "evidence/app-checks-2026-10-23T14-42-33-914Z/report.json",
+    "passed": true,
+    "tests": 104
+  },
+  "expandedNaturalChatCase": {
+    "path": "evidence/interaction-concurrent-22dc4dc2-62e2-422d-a277-2d4c3efb5062/acceptance.json",
+    "naturalChatStartedWork": true,
+    "parallelChatReply": "可以继续聊，后台工作还在进行。",
+    "workStillBusy": true,
+    "routineFileWritten": true,
+    "approvalClicks": 0
+  },
+  "daily": {
+    "url": "http://127.0.0.1:5217",
+    "identityMemoryHistoryPreserved": true,
+    "originalChatMessages": 185,
+    "helpers": 3,
+    "currentVision": {
+      "configured": true,
+      "model": "deepseek-v4.1-flash-vision-exp",
+      "location": "美国视觉服务"
+    }
+  },
+  "vision": {
+    "model": "deepseek-v4.1-flash-vision-exp",
+    "simpleImagePassed": true,
+    "fullContext25ToolsPassed": true,
+    "realUiImagePassed": true,
+    "stableServicePassed": false,
+    "naturalImageDelegationPassed": false,
+    "upstreamFailure": {
+      "status": 500,
+      "error": {
+        "type": "api_error",
+        "code": "internal_error",
+        "message": "Failed to upload inline file."
+      }
+    },
+    "readOnlyLogFinding": {
+      "utcTimes": [
+        "2026-10-23T14:27:21.377Z",
+        "2026-10-23T14:34:54.295Z",
+        "2026-10-23T14:36:17.695Z"
+      ],
+      "phase": "file/upload_file proof-of-work",
+      "code": 40003,
+      "message": "Authorization Failed (invalid token)",
+      "accounts": "redacted",
+      "remoteConfigurationChanged": false
+    }
+  },
+  "layout": {
+    "at": "2026-10-23T15:21:25.931Z",
+    "mode": "read-only daily UI checks, microphone off",
+    "sizes": [
+      {
+        "composerBottom": 782,
+        "height": 800,
+        "overflow": false,
+        "width": 480
+      },
+      {
+        "composerBottom": 696,
+        "height": 720,
+        "overflow": false,
+        "scrollGap": 0,
+        "width": 900
+      }
+    ]
+  },
+  "assets": [
+    {
+      "path": "/assets/index-CQ6fx6xe.js",
+      "sha256": "e85fd6b1970ea815123a9fe9b190526d18f095ce97e3337cb7fbff93511ede56"
+    },
+    {
+      "path": "/assets/index-K8HPrIPC.css",
+      "sha256": "0f117dbfeec5cc088a027604ccbf5ecdd1849333c05dc056df225cccdaae5667"
+    }
+  ],
+  "sources": [
+    {
+      "path": "adapters/runtime.mjs",
+      "sha256": "733e0b51df4bea1f9f7ca0074b607971cd32f2ee3380457b39a2849c481885b5"
+    },
+    {
+      "path": "adapters/server.mjs",
+      "sha256": "47dc3f990d9f3fadbafbabcae2475f4f9dd907a0d3a3be724aea644b3681749f"
+    },
+    {
+      "path": "adapters/reachai.mjs",
+      "sha256": "3c51a44cb2a4082c8e7e5de6d47a828e203246bbce9d67a2b76a060b45b38615"
+    },
+    {
+      "path": "adapters/workspace-hook.mjs",
+      "sha256": "030ba82d45dff8142031d5ee85111a50c3b4bc99d0237d04236c40b86affcdf7"
+    },
+    {
+      "path": "adapters/routine-tool-policy.mjs",
+      "sha256": "0b74208c23916e3c5b01735cd59b45e5b90f73c24900d8b2d5ccc70e6ade2c08"
+    },
+    {
+      "path": "adapters/vision.mjs",
+      "sha256": "1b0a0581afb9f99a81608bad4e1de65dbed510df83c648b79780dd90bcb9a393"
+    },
+    {
+      "path": "adapters/vision-transport.py",
+      "sha256": "ac236a67def192bcd9b9b85434c71e60baf05294f6a3c7b2436df4501f1200f8"
+    },
+    {
+      "path": "app/src/App.tsx",
+      "sha256": "25702cdc821ad4ebeedd6189b39464f25de328df381355620965f671f7ba801a"
+    },
+    {
+      "path": "app/src/useCompanion.ts",
+      "sha256": "2dc36c39d715919ddea8a466466d71d128d391d5ad12d1361602c56eaa17e189"
+    },
+    {
+      "path": "app/src/continuousVoice.ts",
+      "sha256": "4bf1ea5f49ea649554debca23b1a4cab1ade1802672387a2f3e0f9be38986009"
+    },
+    {
+      "path": "app/src/imageAttachments.tsx",
+      "sha256": "3a240c7cee5fe6dc40ece49ecc8a4184ecec8abca51c036ab616785f2dcb9a31"
+    },
+    {
+      "path": "app/src/ConversationFeed.tsx",
+      "sha256": "f3710b6b818f5e77a602d78f39b0fcc2d848b720340db99aa117212a0be12c87"
+    },
+    {
+      "path": "app/src/interaction-ui.css",
+      "sha256": "3652da3ab1ff57081f713ac8355f55585c2675b60cd69de98b6eebcc0624619e"
+    },
+    {
+      "path": "app/src/work.ts",
+      "sha256": "66976e58a9cf52a3d55f5c5bf8fea84c8b779fec2b4f60d02a9b90c3cc9359fb"
+    },
+    {
+      "path": "app/tests/interaction-vision.test.mjs",
+      "sha256": "05c676d81330985f9cafe28dad006aabf9fddde2361aca5ed0989590310270da"
+    },
+    {
+      "path": "app/tests/continuous-voice.test.mjs",
+      "sha256": "b6fba6b6204d14522704be74cba23d7b7c9657681471315fc32b5d881425f9e7"
+    },
+    {
+      "path": "app/tests/reachai-live.test.mjs",
+      "sha256": "2dbee7d8b8d992381d6f2abfc52d44a38243bfa0a2d0f40fa09c11e567b1d2ae"
+    },
+    {
+      "path": "docs/持续沟通与图片识别验收_v1.0.md",
+      "sha256": "323de5c75d14060e32f2f1a8f9733fb44b31756cd74044ec1f10b94188241414"
+    }
+  ],
+  "proof": [
+    {
+      "path": "evidence/interaction-vision-20261023/ui-vision-success-desktop.jpg",
+      "sha256": "55d04951cef54b2d23100168f4db5caefaff2121947013bce8eb6fde6dccd3bc"
+    },
+    {
+      "path": "evidence/interaction-vision-20261023/daily-desktop.jpg",
+      "sha256": "bc67a7d778101be274dbb5d99f802db9c905ce1dfd49eb67945e8754a25b1d63"
+    },
+    {
+      "path": "evidence/interaction-vision-20261023/daily-work-list.jpg",
+      "sha256": "a85de6f4127bc3ed2f0c697dbe0df1a313054f9ce01c40a2e856d019ceae2e6a"
+    },
+    {
+      "path": "evidence/interaction-vision-20261023/daily-work-480.jpg",
+      "sha256": "702eeba23e84a8d383eb13cf57b26f4941605d8b508f998b011de37bb625fc48"
+    },
+    {
+      "path": "evidence/interaction-vision-20261023/daily-chat-900.jpg",
+      "sha256": "ef4082f1048558eae6bf0135c2a3793000745fba2402456f9c019f4fd2186ec4"
+    }
+  ],
+  "documentation": {
+    "at": "2026-10-23T15:24:33.282Z",
+    "archive": "归档/openmaus-assistant/interaction-vision-20261023/recording-2026-10-23T15-24-33-255Z",
+    "created": [
+      "projects/openmaus-assistant/docs/持续沟通与图片识别验收_v1.0.md",
+      "Agent文档/openmaus-assistant_工作日志/工作报告_20261023_持续沟通与图片识别_v1.0.md"
+    ],
+    "updated": [
+      "Agent文档/doc_index.json",
+      "Agent文档/openmaus-assistant_知识库/项目概览_v1.0.md",
+      "projects/openmaus-assistant/README.md",
+      "projects/openmaus-assistant/ui-system/README.md",
+      "projects/openmaus-assistant/ui-system/design-tokens.md",
+      "projects/openmaus-assistant/ui-system/component-patterns.md",
+      "projects/openmaus-assistant/ui-system/interaction-patterns.md",
+      "projects/openmaus-assistant/ui-system/product-research-decision-20261023.md"
+    ],
+    "foreignIndexPreserved": true,
+    "projectIndexUnique": true,
+    "mainSha256": "413986ce2afd8062d050150674e42d2c0ff1834a1c6396456703c1146b526030",
+    "naturalChatAcceptance": "evidence/interaction-concurrent-22dc4dc2-62e2-422d-a277-2d4c3efb5062/acceptance.json"
+  },
+  "boundaries": {
+    "humanHeadsetContinuousAcceptance": false,
+    "voiceBargeInDuringTtsAutomatic": false,
+    "realPrivateDesktopAcceptanceThisRevision": false,
+    "realMailAccountsTested": false,
+    "animatedPortrait": false,
+    "independentG5Signed": false,
+    "G7Published": false
+  }
+}

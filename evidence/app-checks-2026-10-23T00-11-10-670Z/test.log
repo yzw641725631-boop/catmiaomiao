@@ -1,0 +1,121 @@
+✔ DOCX and XLSX are real binaries, reopened content matches literal Chinese/numeric cells (1195.58ms)
+✔ generated artifacts preserve existing bytes and reject traversal, unsupported cells and changed hashes (84.0611ms)
+✔ native scheduled work binds its own workspace, generates actual document/table, survives restart without duplicate legacy dispatch (21593.235ms)
+✔ ASR relay preserves an end receipt on an already-finalized VAD segment without duplicating text (108.145ms)
+✔ browser bridge rejects cross-origin, unknown host, missing capability and arbitrary admin proxy (50.1026ms)
+✔ same send id dispatches one work thread, real helpers write a file and chat continues (10552.4726ms)
+✔ stopping the selected slow work does not stop a separate chat (1341.8102ms)
+✔ memory writes retain optimistic conflict handling across the bridge (124.5297ms)
+✔ a continuous conversation sends one utterance, waits for its own reply and resumes after speech (352.8707ms)
+✔ switching to typing cancels the mic and late ASR or TTS cannot reopen it (340.1609ms)
+✔ opening settings pauses capture, closing resumes, and explicit typing stops further resumes (0.8891ms)
+✔ an idle microphone renews without sending silence or leaving voice mode (341.8008ms)
+✔ a model 502 is reported and voice listening resumes without replaying a request (345.6831ms)
+✔ a terminal failure resumes listening while the native delegated request remains pending (341.6456ms)
+✔ a failed send preserves text and a background task does not block the next voice input (345.4607ms)
+✔ one voice owner spans utterances and an old browser cannot renew, release or transcribe after takeover (2.0526ms)
+✔ an ASR completion is consumed once and missing model replies release voice waiting without replay (374.6173ms)
+✔ a proven reply to this voice request speaks even when an older handoff keeps native requestPending true (0.8858ms)
+✔ the reading view hides only adapter context and exposes actual helper replies and pending questions (2.3987ms)
+✔ live status explicitly reports an unanswered helper question instead of pretending that the helper is running (3.6093ms)
+✔ native handoff timeout closes its old question and a finished helper is not left in the pending badge (0.9204ms)
+✔ artifact downloads use the exact native message link rather than an unproven relative path (0.7238ms)
+✔ compatible API route, secret masking, ASR and restart persistence use an isolated live runtime (22388.4886ms)
+✔ the actual acceptance summary renders GFM as a table and keeps fenced source as code (49.391ms)
+✔ GFM checklists and strike-through work without executing HTML or unsafe links (5.6374ms)
+✔ microphone preference is local, exact for a chosen headset and never silently falls back (3.6338ms)
+✔ the actual AudioWorklet preserves quiet 48k headset samples through transferred 16k PCM frames (63.0585ms)
+✔ a transient failure before model output retries the same request and returns a single completion (96.9313ms)
+✔ partial text or a tool call is never replayed after a provider error (24.5932ms)
+✔ invalid model requests are not retried and repeated transient errors stop after three attempts (77.7507ms)
+✔ cancelling during model retry backoff prevents another provider request (12.411ms)
+✔ provider web verification returns an actionable 503 without retries or raw error details (42.6231ms)
+✔ ordinary service unavailable errors retain 503 after bounded retries (84.0398ms)
+✔ native skill receipt requires a displayed hash and a real applied answer (1.5623ms)
+✔ native skill proposals stay inactive until hash review; enabled instructions and references work in the next task (12703.3366ms)
+✔ native MCP import, real handshake, per-specialist mount and redacted secrets survive restart (10098.914ms)
+Cua Driver daemon listening on \\.\pipe\cua-31816-0d6d98d9
+Cua Driver embedded host closed its lifetime pipe; shutting down.
+✔ actual Windows CUA host mounts through native approvals and preserves human control leases (5177.3795ms)
+✔ native Chrome performs a real synthetic form task and exposes the same live browser with take and release (6407.8335ms)
+✔ PCM resampling preserves duration and chunk continuity at 48k and 44.1k (52.1483ms)
+✔ PCM limits samples and encodes signed little endian (1.2737ms)
+✔ message patches replace by stable id, preserving chronological order (1.4937ms)
+✔ delta never overwrites a persisted terminal answer from the same turn (0.545ms)
+✔ a task error removes only its own streaming text (2.4506ms)
+✔ speech skips code and visible captions remain short (0.7276ms)
+✔ message links retain authorized Windows file references and refuse executable schemes (0.6489ms)
+✔ helper approval cards retain the actual owning bot/thread and the parent work evidence (0.881ms)
+✔ native helper questions remain visible until the helper thread actually receives the answer (0.3371ms)
+✔ ReachAI drives native delegation, speech, protected realtime ASR and persistent identity (24002.8384ms)
+✔ ReachAI selections, credentials and unsupported images fail explicitly (6.3299ms)
+✔ native SSE preserves tool argument fragments, reasoning, usage and the next tool-result turn (143.2847ms)
+✔ model EOF and error events never become a successful completion (55.3304ms)
+✔ catalog strips connection secrets, ASR sends native JSON and TTS validates business errors (112.4955ms)
+✔ realtime transcript merges each final once and waits for the end receipt (41.0227ms)
+✔ cancelling while microphone permission is pending stops a late stream without opening a socket (5.0859ms)
+✔ cancelling a connecting socket closes it if the handshake completes late (2.0398ms)
+✔ an invalid recognition frame releases the microphone and rejects late results (0.9917ms)
+✔ native model tools reach granted files, research, preference, reminder and independent work through the real MCP bridge (16073.9611ms)
+✔ folder grants persist, default to read-only, enforce revocation and archive hash-checked writes (63.6427ms)
+✔ actual DOCX and PDF parsers extract document text and never permit binary writes (789.2ms)
+✔ web tools block private IPs, rebinding and private redirects, and retain actual source URLs (19.6363ms)
+✔ preferences require confirmation, survive restart, deduplicate rejection and support forgetting (4.6571ms)
+✔ reminders catch up once after restart, coalesce daily misses, pause and create actual background work (5.2029ms)
+✔ private service bridge rejects browser origins and unknown task identity; helpers cannot recursively create work (32.8247ms)
+✔ specialist registration preserves Chief ownership and creation cannot smuggle execution permissions (34.7079ms)
+✔ a creation proposal shows created only after a native applied result (0.6211ms)
+✔ native chat creates a specialist with an applied receipt, delegates real scoped files and keeps the new team after restart (17446.842ms)
+✔ manual creation is authenticated, idempotent and retained on a fresh runtime (6522.8671ms)
+✔ stopping during preparation prevents late audio from starting (80.3822ms)
+✔ barge-in pauses audio, releases its URL and prevents subsequent chunks (11.0004ms)
+✔ streaming MP3 starts playback before the response finishes downloading (6.3627ms)
+✔ utterance detection tolerates short pauses, finishes once and never treats silence as speech (9.8946ms)
+✔ voice replies bind to the original user send and survive a terminal patch with the same message id (0.8425ms)
+✔ voice failure explains upstream verification even when an earlier failed tool turn has text (0.6234ms)
+✔ an early provider VAD segment cannot submit before the full two-second audio pause (48.4541ms)
+✔ file capture stops after speech and silence, transcribes once and releases the microphone (7.5293ms)
+✔ no-speech and explicit cancellation do not send audio or late transcriptions (5.4685ms)
+✔ quiet headset speech below the previous threshold now ends after the normal pause (3.8901ms)
+✔ very quiet nonzero input is finalized for ASR instead of rejected as a silent microphone (3.8385ms)
+✔ realtime capture forwards quiet headset PCM and completes its end acknowledgement (8.5701ms)
+✔ local microphone test uses the selected device and reports actual PCM levels without uploading (1.2118ms)
+✔ work view includes delegated chat work, keeps nested ownership and exposes real success and failure steps (4.9979ms)
+✔ a waiting handoff is not complete and the latest terminal failure remains failed (0.5261ms)
+✔ assigned file tools archive replacements, require the exact prior hash and preserve Unicode (55.2304ms)
+✔ separate helper instances cannot overwrite or validate while another mutation holds the job lock (12.2282ms)
+✔ file boundaries reject Windows escape paths, secrets, junctions, hardlinks and oversized text (27.759ms)
+✔ validation receipts reflect real failures and syntax checks do not execute model code (248.4155ms)
+✖ the native turn hook is pinned and MCP stdio uses only its trusted assigned root (153.7403ms)
+✔ native delegation ancestry grants only the matching job root and never ordinary chat or foreign bots (6.7404ms)
+✔ failed work resumes in its original folder, deduplicates retries and restores its evidence after restart (8.9851ms)
+✔ helper answers use the native question destination, stay in the same job and reject unrelated messages (7.2962ms)
+✔ questions delegated from ordinary chat can be answered only within their verified parent conversation (2.6272ms)
+ℹ tests 91
+ℹ suites 0
+ℹ pass 90
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 36009.5292
+
+✖ failing tests:
+
+test at tests\workspace.test.mjs:64:1
+✖ the native turn hook is pinned and MCP stdio uses only its trusted assigned root (153.7403ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  6 !== 4
+  
+      at TestContext.<anonymous> (file:///J:/agent_project/projects/openmaus-assistant/app/tests/workspace.test.mjs:78:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 6,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,122 @@
+{
+  "at": "2026-10-25T13:53:06.346Z",
+  "passed": true,
+  "scope": "Local G2/G4 bugfix; G5 independent sign-off pending, G7 not requested",
+  "checks": {
+    "report": "evidence/app-checks-2026-10-25T13-38-59-825Z/report.json",
+    "testCount": 113,
+    "targetedNameRerunPassed": true
+  },
+  "liveModelRename": {
+    "nameSaved": true,
+    "terminalSuccess": true,
+    "pendingApproval": false
+  },
+  "browser": {
+    "at": "2026-10-25T13:52:22.798Z",
+    "url": "http://127.0.0.1:5217/",
+    "savedChiefName": "小蕊",
+    "saveSuccessVisible": true,
+    "escapeCancelsEditBeforeClosing": true,
+    "dialogOverflow": false,
+    "horizontalOverflow": false,
+    "viewport": {
+      "width": 619,
+      "height": 892
+    },
+    "namePersistsAfterReload": true,
+    "microphoneOff": true
+  },
+  "unchanged": {
+    "at": "2026-10-25T13:49:26.234Z",
+    "chiefId": "7e60e8a5-b4ad-4d80-ad17-a7d97e8f740b",
+    "companionThreadId": "5ac4c945-ac16-4dfb-8d3e-70a1115c8a7d",
+    "helperIds": [
+      "4620ef15-7b97-4725-8983-d184038babfc",
+      "1d740a71-cd2b-46ac-bf08-1ce85ea19b7a",
+      "e569d99d-d1b7-42d0-acc0-eb583988fa5d"
+    ],
+    "chiefName": "小蕊",
+    "messageCount": 417,
+    "messagesHash": "500fd52e7f8c6892d3ebb95db0963b3deb89fafaed69406ecc6c00b23c074f57",
+    "memoryIndexHash": "40fbf584482b62d35e8f36d7e659185818aa49877ff0bb8aeda6925fbf70ca4c",
+    "memoryUnchanged": true,
+    "settingsHash": "608b08dab8a493c9ed5cede8ea6bcdb74ac8e84f6292a8405bd9c8eb082fafc4",
+    "capabilitiesHash": "500e33892aa7badb1f5a9a3352a0c1481a3f0d66dff67fb3b5e9002a07262fc9",
+    "mainHash": "413986ce2afd8062d050150674e42d2c0ff1834a1c6396456703c1146b526030",
+    "passed": true
+  },
+  "latency": {
+    "previousModelCompletionMs": [
+      11196,
+      12032
+    ],
+    "isolatedGatewayHeadersMs": 11959,
+    "isolatedFirstContentMs": 12584,
+    "isolatedCompletionMs": 12586,
+    "comparisonProvesStableSpeedup": false,
+    "upstream401Observed": true,
+    "toolCount": 84,
+    "toolBytes": 126776,
+    "obsoleteHistoryJsonBytesSavedInTwoTurnFixture": 4037
+  },
+  "disk": {
+    "initialFreeBytes": 0,
+    "currentFreeBytes": 1270398976,
+    "action": "NTFS in-place lossless compression of project archives and evidence; no files deleted or migrated"
+  },
+  "files": [
+    {
+      "path": "adapters/team.mjs",
+      "sha256": "28bfdadcc30a234536b377adb250e5a10af6170959f1643c8529a2e30e4fdb31"
+    },
+    {
+      "path": "adapters/runtime.mjs",
+      "sha256": "9c5a5947187c8f8e182a5920caf3c86e961d2574a27820af205c49b85d33f12b"
+    },
+    {
+      "path": "adapters/server.mjs",
+      "sha256": "628937c426a2b4c385106dc55f9376961b62592d9cfad4c431d7bba080272693"
+    },
+    {
+      "path": "adapters/assistant-services.mjs",
+      "sha256": "aa8b553096d0f0e010897657d94c1f4c6b6e332efce7bcab96548ea4bce31aa8"
+    },
+    {
+      "path": "adapters/routine-tool-policy.mjs",
+      "sha256": "1d73d273285cd206fd5e667ffef1c9b76aa0d0be3f4fda7ea3c5a8336c3a8bd2"
+    },
+    {
+      "path": "adapters/reachai.mjs",
+      "sha256": "50c86040853d3ea2139ef715f882b63be317720bef44cdb0ea552f239fefa053"
+    },
+    {
+      "path": "app/src/TeamDrawer.tsx",
+      "sha256": "92c13deb189d03020239d99bd627260062e456af189129a8a2528de73c9cef16"
+    },
+    {
+      "path": "app/src/team.css",
+      "sha256": "a687e084fc5ddb65421ad3e46fdee34b7bbaa88dfca691a79eedb39df28b3331"
+    },
+    {
+      "path": "app/src/App.tsx",
+      "sha256": "66fc4d7073eaf92b10d82c9234db19797d500d93042458cea57826e1d5a86e32"
+    },
+    {
+      "path": "app/src/useCompanion.ts",
+      "sha256": "9cadb321a9439fea7fef2690c682e8913c9ef2d1c28b3744b4ab9be24f80f746"
+    },
+    {
+      "path": "app/tests/assistant-names.test.mjs",
+      "sha256": "906f7a0ef6d681cb18f9e1ac88f2f13100f4a922dad75293d8e959e00f2bb222"
+    },
+    {
+      "path": "app/tests/reachai.test.mjs",
+      "sha256": "b9de8917771d2ec25a91d9f743ef7e7b79e1877d2a65d304f86bda6734201e23"
+    },
+    {
+      "path": "app/tests/model-retry.test.mjs",
+      "sha256": "cc53960aff975c1c1834aefe17e2cc1f412ec12dc19fbc4dcf57ad2146bd4a77"
+    }
+  ]
+}

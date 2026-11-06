@@ -1,0 +1,39 @@
+✔ browser bridge rejects cross-origin, unknown host, missing capability and arbitrary admin proxy (26.7006ms)
+✔ same send id dispatches one work thread, real helpers write a file and chat continues (8955.3193ms)
+✔ stopping the selected slow work does not stop a separate chat (1294.6205ms)
+✔ memory writes retain optimistic conflict handling across the bridge (126.6292ms)
+✔ compatible API route, secret masking, ASR and restart persistence use an isolated live runtime (12498.0805ms)
+✔ PCM resampling preserves duration and chunk continuity at 48k and 44.1k (26.6635ms)
+✔ PCM limits samples and encodes signed little endian (1.0545ms)
+✔ message patches replace by stable id, preserving chronological order (1.2949ms)
+✔ delta never overwrites a persisted terminal answer from the same turn (0.482ms)
+✔ a task error removes only its own streaming text (0.2227ms)
+✔ speech skips code and visible captions remain short (0.4337ms)
+✔ message links retain authorized Windows file references and refuse executable schemes (0.5136ms)
+✔ helper approval cards retain the actual owning bot/thread and the parent work evidence (0.561ms)
+✔ ReachAI drives native delegation, speech, protected realtime ASR and persistent identity (15447.5216ms)
+✔ ReachAI selections, credentials and unsupported images fail explicitly (4.0997ms)
+✔ native SSE preserves tool argument fragments, reasoning, usage and the next tool-result turn (102.2824ms)
+✔ model EOF and error events never become a successful completion (23.5926ms)
+✔ catalog strips connection secrets, ASR sends native JSON and TTS validates business errors (117.2054ms)
+✔ realtime transcript merges each final once and waits for the end receipt (34.0038ms)
+✔ cancelling while microphone permission is pending stops a late stream without opening a socket (0.5288ms)
+✔ cancelling a connecting socket closes it if the handshake completes late (5.3194ms)
+✔ an invalid recognition frame releases the microphone and rejects late results (0.6566ms)
+✔ stopping during preparation prevents late audio from starting (33.4713ms)
+✔ barge-in pauses audio, releases its URL and prevents subsequent chunks (8.4345ms)
+✔ streaming MP3 starts playback before the response finishes downloading (3.9901ms)
+✔ assigned file tools archive replacements, require the exact prior hash and preserve Unicode (22.0427ms)
+✔ file boundaries reject Windows escape paths, secrets, junctions, hardlinks and oversized text (9.94ms)
+✔ validation receipts reflect real failures and syntax checks do not execute model code (166.1544ms)
+✔ the native turn hook is pinned and MCP stdio uses only its trusted assigned root (100.1356ms)
+✔ native delegation ancestry grants only the matching job root and never ordinary chat or foreign bots (2.8628ms)
+✔ failed work resumes in its original folder, deduplicates retries and restores its evidence after restart (6.058ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16275.3333

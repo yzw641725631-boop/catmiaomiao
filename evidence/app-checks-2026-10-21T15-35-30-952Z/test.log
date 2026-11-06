@@ -1,0 +1,31 @@
+✔ browser bridge rejects cross-origin, unknown host, missing capability and arbitrary admin proxy (41.6133ms)
+✔ same send id dispatches one work thread, real helpers write a file and chat continues (8914.7595ms)
+✔ stopping the selected slow work does not stop a separate chat (1237.6632ms)
+✔ memory writes retain optimistic conflict handling across the bridge (144.3174ms)
+✔ compatible API route, secret masking, ASR and restart persistence use an isolated live runtime (12175.9211ms)
+✔ PCM resampling preserves duration and chunk continuity at 48k and 44.1k (24.616ms)
+✔ PCM limits samples and encodes signed little endian (0.7438ms)
+✔ message patches replace by stable id, preserving chronological order (1.3684ms)
+✔ delta never overwrites a persisted terminal answer from the same turn (0.3006ms)
+✔ a task error removes only its own streaming text (0.2017ms)
+✔ speech skips code and visible captions remain short (0.4386ms)
+✔ message links retain authorized Windows file references and refuse executable schemes (0.6028ms)
+✔ ReachAI drives native delegation, speech, protected realtime ASR and persistent identity (15172.9855ms)
+✔ ReachAI selections, credentials and unsupported images fail explicitly (2.6811ms)
+✔ native SSE preserves tool argument fragments, reasoning, usage and the next tool-result turn (102.2314ms)
+✔ model EOF and error events never become a successful completion (32.8795ms)
+✔ catalog strips connection secrets, ASR sends native JSON and TTS validates business errors (76.4035ms)
+✔ realtime transcript merges each final once and waits for the end receipt (29.6206ms)
+✔ cancelling while microphone permission is pending stops a late stream without opening a socket (0.3097ms)
+✔ cancelling a connecting socket closes it if the handshake completes late (4.4555ms)
+✔ stopping during preparation prevents late audio from starting (27.635ms)
+✔ barge-in pauses audio, releases its URL and prevents subsequent chunks (6.9991ms)
+✔ streaming MP3 starts playback before the response finishes downloading (2.5561ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15952.8466

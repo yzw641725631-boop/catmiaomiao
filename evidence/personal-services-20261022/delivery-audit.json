@@ -1,0 +1,140 @@
+{
+  "at": "2026-10-22T15:37:19.761Z",
+  "timeZone": "Asia/Shanghai",
+  "passed": true,
+  "testCount": 72,
+  "checksPath": "evidence/app-checks-2026-10-22T15-28-46-817Z/report.json",
+  "realModelPath": "evidence/personal-services-20261022/live-2026-10-22T15-10-34-057Z.json",
+  "schedulerPath": "evidence/personal-services-20261022/scheduler-2026-10-22T15-18-28-251Z.json",
+  "browserPath": "evidence/personal-services-20261022/browser-proof.json",
+  "realModel": {
+    "instanceId": "5e30cb57-167d-4c2f-b953-6e6b5bd500b1",
+    "threadId": "d53aad08-a7af-4168-953e-34dd2d4cb796",
+    "nativeTools": [
+      {
+        "name": "assistant_folder_read",
+        "ok": true
+      },
+      {
+        "name": "assistant_web_read",
+        "ok": true
+      },
+      {
+        "name": "workspace_write_file",
+        "ok": true
+      },
+      {
+        "name": "workspace_check_file",
+        "ok": true
+      }
+    ],
+    "approvalCount": 4,
+    "file": "runtime\\live-harness\\companion-work\\5ff2334d-6131-4b05-ace3-6a5a12dcb29e\\report.md",
+    "bytes": 3635,
+    "sha256": "74e9ea21710e1f60b7dc3ac6f2e76a73a7374d82dd22e94b0f06c03c91f35402",
+    "downloadVerified": true
+  },
+  "scheduler": {
+    "reminderId": "cab55410-cf38-4244-8f81-99c80d558e29",
+    "threadId": "cfa10fd2-b82e-42b4-8475-4836dbc874f2",
+    "triggeredWithoutUIClick": true,
+    "realModelReply": true,
+    "browserClosedDuringTest": false,
+    "elapsedMs": 14516,
+    "notificationSeen": true
+  },
+  "preference": {
+    "id": "c8c09234-956c-4f9f-908a-b782b907210b",
+    "confirmed": true,
+    "nativeMemoryMarkerFound": true,
+    "afterPageReload": true,
+    "source": "User explicitly requested two seconds and continuous voice until typing"
+  },
+  "preview": {
+    "origin": "http://127.0.0.1:5217",
+    "mode": "live",
+    "provider": "reachai",
+    "selectedInstance": "5e30cb57-167d-4c2f-b953-6e6b5bd500b1",
+    "chiefId": "7e60e8a5-b4ad-4d80-ad17-a7d97e8f740b",
+    "helperIds": [
+      "4620ef15-7b97-4725-8983-d184038babfc",
+      "1d740a71-cd2b-46ac-bf08-1ce85ea19b7a"
+    ],
+    "companionThreadId": "5ac4c945-ac16-4dfb-8d3e-70a1115c8a7d"
+  },
+  "sourceHashes": {
+    "adapters/assistant-mcp.mjs": "25bb3f9261d9f7d1dbbd8d035a465f5d5d4c74e6c6a569ec4f7758ab34fdbeab",
+    "adapters/assistant-services.mjs": "603159004bc2f9c62315d147cbac3ce086b6e796662ed45c13fc40fc5048dd84",
+    "adapters/document-reader.mjs": "61643a1410a63a3e47bca34b137232b2da454cd1cbcf13d2a0bffac756caa1a4",
+    "adapters/endpoints.mjs": "5e3ff5173c29da69b9c724986545cb5b1a795c5945c9a520b7f87ba4673013d3",
+    "adapters/local-folders.mjs": "a94fdd846522d0be987c72ce5c51822b15cac20633c69c730764457f4f077408",
+    "adapters/parent-port.mjs": "051c1d5d4288321de552bde0b4721ba7fdad709aa6b4f474bb95cf5cf2e32d7d",
+    "adapters/public-web.mjs": "71d339a1e7538780fa0364ed7659e2c9084444e9ddd5e5be0f7bc60b3730182f",
+    "adapters/reachai.mjs": "333ee4d3d3d9656d546af1fcfca320eeac7c1e1c49c0122ec9be925dfe880eb0",
+    "adapters/realtime-asr.mjs": "3b979cf0d7fe768c4062529684e8be7529bfdc0624a153facf5ebc1a58a03c4c",
+    "adapters/runtime.mjs": "82041a336899476220c2c9bf033d76f952bcb665731b3514c245b8006e4dcde1",
+    "adapters/server.mjs": "862843bc0b1e6f2980df9c72f27f4888b61ddf72d24a1d27e86f6f44f03a4b08",
+    "adapters/work-evidence.mjs": "89b6ccbb55aca155ccfa6593a0d2b97d6bd88b498e3ae9f491296e9fc01691f8",
+    "adapters/workspace-files.mjs": "1d4d7a571371d158b454966d70f642c9a3fb2fc3359af7401e3a835716af2db6",
+    "adapters/workspace-hook.mjs": "791309d520f6d9eebcf92e622ea2f306042b66e98b9e1347cb88311c5f74da03",
+    "adapters/workspace-mcp.mjs": "80541ee16cdbda0d9fe3b69c94db662633c818ea573b42b2e985da0718eed218",
+    "app/dist/index.html": "9b5c22c2cae5b34303a6450b2c53a8445e0b5da294f3c8c61d3b211a8c3f85f1",
+    "app/package.json": "f4ef9164c6d0573b86e11c86e40dc22860321ee4ebba32bd888e2625b4c2c526",
+    "app/pnpm-lock.yaml": "1257807d4d8473b9e90a06bb79f0166de997ed3c3a0cc19afbfef19ba2247ac1",
+    "app/src/App.tsx": "5f97ecf3aa812eac942508e4f995e42e8c8645c2f3bedc4de96b3134a2b4951b",
+    "app/src/MessageMarkdown.ts": "d91299ac42cadeeb8103d1364cf2d861f06b041d6e9abfaf241ffe08b917b072",
+    "app/src/MicrophoneSettings.tsx": "e50d2e898b3cb60cd7f5ea9af545083955182f4a42d711d36d3e69f24a066a0a",
+    "app/src/ReachaiSettings.tsx": "885170b03ab08c4dbf5c8db840401d4a55924e0432ba67ab46cb960529ba8e64",
+    "app/src/ServicesDrawer.tsx": "5fd3d489759364a9c4714f47ab515f3819ff8f0f31741aacc180b0dd01b6443a",
+    "app/src/Settings.tsx": "ce5e79c1c953616172d28a099a7d8bab6e1edf4554b92d3be8356dd6a2afe846",
+    "app/src/api.ts": "8eb92fea22106aca03c211b12c6f2669417077aa7bccd0e6bbc83a062ee1c1fd",
+    "app/src/assistant-services.css": "069f01de1a5254298fcf8169640c44b13c654e873d3e84b0ba1fb81185cb869a",
+    "app/src/continuousVoice.ts": "8aedd03228ac578e730b20270c2650961894887c312237868852f409828be221",
+    "app/src/main.tsx": "f08b436bbf4cf52293044fd578c919f50ef6d183bd3091d8abb1f300fe7b6a50",
+    "app/src/microphone.ts": "452717a4aa133eabe8b7eada6caa34728d1b55ccb551c2153f9c795fd9782792",
+    "app/src/projection.ts": "913821449f33ea1f57dc6d1a4d4ed18a3a5e31a9c6b9a7ad95038acd4fe9f1a6",
+    "app/src/realtimeSpeech.ts": "eeaec0c8505a84ca9c2c6a82bf797394c360211de01ea8f61a312681eae1c355",
+    "app/src/speech.ts": "4ad3b8a5f6081a5e25fc415446d6047fb3ee83f0cd72bf2b048f044b241dd538",
+    "app/src/style.css": "2b9c70566de162670ce619081d42880d5e53ebc42e96644ff74ab1e0d1a407b5",
+    "app/src/types.ts": "8db0d2af23d4a3dd42ef2cadda7fd3d5f374ff1ea74af5bcbdcd7a104dc6b766",
+    "app/src/useCompanion.ts": "d8126c8487034b9171471b0d974f9aaffcfb77723ab5bc3a27366f8573ad84b9",
+    "app/src/voiceActivity.ts": "cf4a3c12e5e727296a901b5d82b10e54c451e814ce15142e78d5b1e9193250b1",
+    "app/src/voiceCapture.ts": "84796427b2dbaaee604dd865441dd9008733f3a5491a90f22733788474e11fb3",
+    "app/src/voiceReplies.ts": "d77a5a8014ba9ee6723dbb637860424699e7f132936341cb4e807dde5503d1c8",
+    "app/src/work.ts": "2f5ba0b90847c006e6100e55239bbba0287fd1ecbb310074a114714b1911c5cc",
+    "app/tests/asr-relay.test.mjs": "19a0209423e01c689c968f5b6fbff69817ed04c8b2817fda910fe2a4746c5626",
+    "app/tests/bridge.test.mjs": "5e9843a0a035878f93d8098392aff456c49fc7699dd0884b79c023b7e65e3e42",
+    "app/tests/continuous-voice.test.mjs": "29bd2b3e8e89fa8f3268164f307c625a292d40460bed775ab34d424c7fd9b19c",
+    "app/tests/fixtures/reachai.mjs": "6a5aca6bde063e8fc38db07b4750541b322bccbc0d4e16267bff50a9e0bbe5b1",
+    "app/tests/live-adapter.test.mjs": "ac45aaae06599408b18746eb11808b0a7c5e8ede410ea2ceacbc6c397281344e",
+    "app/tests/markdown.test.mjs": "1dc11562ee25a6fa511d92518246d5ad31a13bb2c873b7ade639ad78f16a7e88",
+    "app/tests/microphone.test.mjs": "283f38151593406270ad7ee95fe5abc7dd89094b90d90348cee092861b472ef4",
+    "app/tests/model-retry.test.mjs": "d8afab9675de4027406a82fcdc7fce93359e954b69e8eecb956bd42d7cc96b75",
+    "app/tests/pcm.test.mjs": "9f9c4deea7d340faa676bbf08399902dc6ad3a1a4a59c3ab1d8b7001e7fac7a1",
+    "app/tests/projection.test.mjs": "3044a6fd2af845dc1c8909b4db447d6ca6ac0ff95f0eac22f7768c1d4c914a81",
+    "app/tests/reachai-live.test.mjs": "2e868258470a283f65ca6e4fa758f59d4f40b0f2d27e77b8127707262763266a",
+    "app/tests/reachai.test.mjs": "219d6ef52f14d1788ac7e9672bc42f83b23d02c2ad8424c4634e97d473af32fe",
+    "app/tests/realtime-speech.test.mjs": "2f9c802e22d543493b22e0dc3231e7da1204b2441bd3fb1ab330b064cc325cf8",
+    "app/tests/services-live.test.mjs": "2d74f71fc3cc2d0fbb3c75cd958844095b990104d962ea879b14690fd5c69358",
+    "app/tests/services.test.mjs": "cac50ff217614c570002dcc90f8ecf87953f4162e2850698df4b292264b28389",
+    "app/tests/speech.test.mjs": "86a872083a961d7b48faf6679c65f484c7c213b4ad008f1c6ce29ec664b4766c",
+    "app/tests/voice.test.mjs": "d56416af1b4eb1346e7d023fd1d7d351851d12a271922fa9a99fc791ac83445e",
+    "app/tests/work-view.test.mjs": "a58dc966f906a2de3e738e5aeb789357e3341d44d3f40fe4535f533b3ad7388f",
+    "app/tests/workspace.test.mjs": "723dcbd5a90691a37e29061caccbaa217b6932118983694d04653e56975d2861"
+  },
+  "mainSha": "413986ce2afd8062d050150674e42d2c0ff1834a1c6396456703c1146b526030",
+  "mainUnchanged": true,
+  "upstreamHead": "97a4a1cab96ab3d07b0c7dac275f69afc6e7a8dc",
+  "upstreamUnchanged": true,
+  "unrelatedIndexPreserved": true,
+  "limits": [
+    "Public page search/read only; no logged-in graphical browser or mail/calendar connectors",
+    "Explicit folder grants; binary document read only; no OCR or arbitrary shell execution",
+    "Local service must remain running; no Windows startup service or cloud 24-hour hosting",
+    "Upstream model verification and long-run stability not resolved",
+    "Assistant wording misreported approvals despite four actual approvals; full summary accuracy not claimed",
+    "Human headset single turn confirmed previously; continuous two-round/noise and native 125 percent scaling still pending",
+    "Static character, no lip animation",
+    "Developer self-check only; independent G5 signoff and G7 release not claimed"
+  ]
+}

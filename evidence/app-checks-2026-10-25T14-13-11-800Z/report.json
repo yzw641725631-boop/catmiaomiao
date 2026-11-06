@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-25",
+  "timeZone": "Asia/Shanghai",
+  "node": "v24.22.1",
+  "scope": "isolated local contract checks; no real credentials or microphones",
+  "stages": [
+    {
+      "name": "typecheck",
+      "args": [
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "elapsedMs": 3224,
+      "log": "typecheck.log"
+    },
+    {
+      "name": "test",
+      "args": [
+        "--experimental-strip-types",
+        "--test",
+        "--test-reporter=spec",
+        "tests/artifact-workflows.test.mjs",
+        "tests/asr-relay.test.mjs",
+        "tests/assistant-names.test.mjs",
+        "tests/bridge.test.mjs",
+        "tests/continuous-voice.test.mjs",
+        "tests/conversation-recovery.test.mjs",
+        "tests/conversation-settings.test.mjs",
+        "tests/interaction-vision.test.mjs",
+        "tests/live-adapter.test.mjs",
+        "tests/mail-accounts.test.mjs",
+        "tests/markdown.test.mjs",
+        "tests/microphone.test.mjs",
+        "tests/model-retry.test.mjs",
+        "tests/native-capabilities.test.mjs",
+        "tests/native-goals.test.mjs",
+        "tests/pcm.test.mjs",
+        "tests/projection.test.mjs",
+        "tests/reachai-live.test.mjs",
+        "tests/reachai.test.mjs",
+        "tests/realtime-speech.test.mjs",
+        "tests/services-live.test.mjs",
+        "tests/services.test.mjs",
+        "tests/specialists.test.mjs",
+        "tests/speech.test.mjs",
+        "tests/surface-grants.test.mjs",
+        "tests/voice.test.mjs",
+        "tests/work-view.test.mjs",
+        "tests/workspace.test.mjs"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "elapsedMs": 74082,
+      "log": "test.log"
+    },
+    {
+      "name": "build",
+      "args": [
+        "node_modules/vite/bin/vite.js",
+        "build"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "elapsedMs": 5136,
+      "log": "build.log"
+    }
+  ],
+  "passed": true
+}

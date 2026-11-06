@@ -1,0 +1,16 @@
+✔ vision upload retries preserve the exact continuation and return only the eventual complete response (12.6233ms)
+✔ vision retries stop after two additional attempts and preserve the original upload error (14.8595ms)
+✔ temporary vision upstream 502/503 errors can recover without reissuing a user message (15.0545ms)
+✔ vision authentication, verification, invalid input, timeout and incomplete responses are not retried (0.9728ms)
+✔ cancelling before a vision call or during backoff prevents any subsequent attempts (13.9121ms)
+✔ a response arriving after cancellation is never delivered to the native harness (0.3369ms)
+✔ the retry window prevents restarting a long vision call even when attempt slots remain (0.94ms)
+✔ a native image job automatically recovers after its file action without replaying that action (8323.0522ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11877.85

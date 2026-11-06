@@ -1,0 +1,191 @@
+{
+  "runId": "2026-10-21T13-40-12-887Z",
+  "node": "v24.19.0",
+  "platform": "win32",
+  "provider": "repository fake Claude only",
+  "checks": [
+    {
+      "name": "isolated server boot",
+      "passed": true,
+      "detail": {
+        "edition": {
+          "edition": "oss",
+          "features": [],
+          "notice": "enterprise layer present but OMB_LICENSE_KEY is not set"
+        }
+      }
+    },
+    {
+      "name": "SSE cold connect declares snapshot required",
+      "passed": true,
+      "detail": {
+        "kind": "hello",
+        "cursor": "9662d986:2",
+        "resumed": false
+      }
+    },
+    {
+      "name": "Chief opens real bounded threads on two helpers",
+      "passed": true,
+      "detail": [
+        {
+          "botId": "9a4fede9-0ae4-4af6-ac54-16b06a5a048d",
+          "tasks": [
+            {
+              "threadId": "1d58dd17-927a-4454-a086-13540b08daff",
+              "openedBy": {
+                "botId": "7b1bf093-1caa-4cce-a190-977ad05a3ad2",
+                "name": "Companion",
+                "threadId": "64305cdc-fd2d-4eb6-8743-e90f3c824a4d",
+                "at": 1792590016283,
+                "kind": "work"
+              },
+              "busy": true
+            },
+            {
+              "threadId": "c7f862b6-7c1d-4345-a93d-b9cf63762aa3",
+              "busy": false
+            }
+          ]
+        },
+        {
+          "botId": "fa6eec0e-5393-4024-a0f8-2dda7c1f7bdb",
+          "tasks": [
+            {
+              "threadId": "6f503463-d6cc-4df8-8b30-1604a788b1ae",
+              "openedBy": {
+                "botId": "7b1bf093-1caa-4cce-a190-977ad05a3ad2",
+                "name": "Companion",
+                "threadId": "64305cdc-fd2d-4eb6-8743-e90f3c824a4d",
+                "at": 1792590016278,
+                "kind": "work"
+              },
+              "busy": true
+            },
+            {
+              "threadId": "e2d472be-a983-4f52-8c8f-4a7499423bb4",
+              "busy": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "same persistent Chief chats in a separate thread while helpers remain running",
+      "passed": true,
+      "detail": {
+        "chatThreadId": "c7a441c9-8234-4729-ac95-b82e31b796e6",
+        "workThreadId": "64305cdc-fd2d-4eb6-8743-e90f3c824a4d"
+      }
+    },
+    {
+      "name": "helper results return to Chief without widening Ask permissions",
+      "passed": true,
+      "detail": {
+        "scriptedProviderTurns": 5
+      }
+    },
+    {
+      "name": "SSE resumes within buffer and refuses cursors from another server run",
+      "passed": true,
+      "detail": {
+        "resumedHello": {
+          "kind": "hello",
+          "cursor": "9662d986:148",
+          "resumed": true
+        },
+        "staleHello": {
+          "kind": "hello",
+          "cursor": "9662d986:148",
+          "resumed": false
+        }
+      }
+    },
+    {
+      "name": "memory persists via API, journals edits and rejects stale overwrites",
+      "passed": true,
+      "detail": {
+        "beforeHash": "0fe2c93ec8a02a38458bf1ccc86aa01a726a213107eb422308d1aeba2e278bee",
+        "savedHash": "71a5360033321450c1c26464620598e60c4a1d8160067fed85c1b0d86fe55644",
+        "journalEntryId": "25556d8f-a41c-4f51-8786-726a215375a5"
+      }
+    },
+    {
+      "name": "thread-scoped interrupt leaves another thread on the same bot running",
+      "passed": true,
+      "detail": {
+        "stoppedThreadId": "b5b02ffd-fa01-4478-8e50-a029668ed60c",
+        "preservedThreadId": "d5a792c9-6370-484a-82ba-cfb6a0bd737f"
+      }
+    },
+    {
+      "name": "voice reports missing configuration; Windows native dictation is unavailable",
+      "passed": true,
+      "detail": {
+        "voice": {
+          "ready": false,
+          "utterances": [
+            "语音技术验证。"
+          ]
+        },
+        "nativeCapabilities": {
+          "remote": false,
+          "host": {
+            "platform": "win32",
+            "label": "Windows",
+            "session": "unknown",
+            "packaged": true,
+            "homeDir": "C:\\Users\\Administrator"
+          },
+          "windowChrome": "win-caption",
+          "screenPreview": {
+            "available": false,
+            "interaction": "none",
+            "reasonCode": "unsupported-platform"
+          },
+          "dictation": {
+            "available": false,
+            "engine": "none",
+            "onDevice": false,
+            "reasonCode": "unsupported-platform"
+          },
+          "localComputer": {
+            "available": false,
+            "support": "unsupported",
+            "enabled": false,
+            "status": "unavailable",
+            "reasonCode": "unsupported-platform"
+          }
+        }
+      }
+    },
+    {
+      "name": "real harness emits text deltas and persisted work digests",
+      "passed": true,
+      "detail": {
+        "frameCount": 204,
+        "kinds": [
+          "hello",
+          "sections",
+          "bot",
+          "message",
+          "message.patch",
+          "runtime",
+          "notify"
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "No real model, microphone, TTS audio, avatar inference, desktop control or custom UI tested."
+  ],
+  "fixture": {
+    "url": "http://127.0.0.1:21878",
+    "pid": 39916,
+    "dataDir": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\openmausbot-verify-data-2OqiMm",
+    "logPath": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\openmausbot-verification-evidence\\server-1792590012893-29676.log"
+  },
+  "passed": true,
+  "archivedFixtureData": "J:\\agent_project\\归档\\openmaus-assistant\\2026-10-21T13-40-12-887Z\\fixture-data",
+  "fixtureStopped": true
+}

@@ -1,0 +1,66 @@
+✔ browser bridge rejects cross-origin, unknown host, missing capability and arbitrary admin proxy (43.1954ms)
+✔ same send id dispatches one work thread, real helpers write a file and chat continues (8491.489ms)
+✔ stopping the selected slow work does not stop a separate chat (1279.176ms)
+✔ memory writes retain optimistic conflict handling across the bridge (141.7462ms)
+✖ compatible API route, secret masking, ASR and restart persistence use an isolated live runtime (11963.9308ms)
+✔ PCM resampling preserves duration and chunk continuity at 48k and 44.1k (24.59ms)
+✔ PCM limits samples and encodes signed little endian (1.1261ms)
+✔ message patches replace by stable id, preserving chronological order (1.0562ms)
+✔ delta never overwrites a persisted terminal answer from the same turn (0.4257ms)
+✔ a task error removes only its own streaming text (0.1835ms)
+✔ speech skips code and visible captions remain short (0.3579ms)
+✔ message links retain authorized Windows file references and refuse executable schemes (0.503ms)
+✔ helper approval cards retain the actual owning bot/thread and the parent work evidence (0.5292ms)
+✔ native helper questions remain visible until the helper thread actually receives the answer (0.1999ms)
+✔ ReachAI drives native delegation, speech, protected realtime ASR and persistent identity (13953.6645ms)
+✔ ReachAI selections, credentials and unsupported images fail explicitly (6.3779ms)
+✔ native SSE preserves tool argument fragments, reasoning, usage and the next tool-result turn (118.6821ms)
+✔ model EOF and error events never become a successful completion (22.282ms)
+✔ catalog strips connection secrets, ASR sends native JSON and TTS validates business errors (105.5346ms)
+✔ realtime transcript merges each final once and waits for the end receipt (34.3398ms)
+✔ cancelling while microphone permission is pending stops a late stream without opening a socket (0.5712ms)
+✔ cancelling a connecting socket closes it if the handshake completes late (5.6632ms)
+✔ an invalid recognition frame releases the microphone and rejects late results (0.8827ms)
+✔ stopping during preparation prevents late audio from starting (34.6978ms)
+✔ barge-in pauses audio, releases its URL and prevents subsequent chunks (6.1482ms)
+✔ streaming MP3 starts playback before the response finishes downloading (2.8366ms)
+✔ assigned file tools archive replacements, require the exact prior hash and preserve Unicode (21.7638ms)
+✔ file boundaries reject Windows escape paths, secrets, junctions, hardlinks and oversized text (15.9ms)
+✔ validation receipts reflect real failures and syntax checks do not execute model code (184.1785ms)
+✔ the native turn hook is pinned and MCP stdio uses only its trusted assigned root (98.7226ms)
+✔ native delegation ancestry grants only the matching job root and never ordinary chat or foreign bots (2.9518ms)
+✔ failed work resumes in its original folder, deduplicates retries and restores its evidence after restart (5.8862ms)
+✖ helper answers use the native question destination, stay in the same job and reject unrelated messages (4.0117ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 31
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14808.3786
+
+✖ failing tests:
+
+test at tests\live-adapter.test.mjs:10:1
+✖ compatible API route, secret masking, ASR and restart persistence use an isolated live runtime (11963.9308ms)
+  Error: write EPIPE
+      at target._send (node:internal/child_process:917:20)
+      at target.send (node:internal/child_process:792:19)
+      at file:///J:/agent_project/projects/openmaus-assistant/adapters/runtime.mjs:96:36 {
+    errno: -4047,
+    code: 'EPIPE',
+    syscall: 'write'
+  }
+
+test at tests\workspace.test.mjs:110:1
+✖ helper answers use the native question destination, stay in the same job and reject unrelated messages (4.0117ms)
+  Error: 重复标识的回答内容不一致。
+      at fail (file:///J:/agent_project/projects/openmaus-assistant/adapters/endpoints.mjs:1:68)
+      at CompanionRuntime.replyToHelper (file:///J:/agent_project/projects/openmaus-assistant/adapters/runtime.mjs:336:103)
+      at TestContext.<anonymous> (file:///J:/agent_project/projects/openmaus-assistant/app/tests/workspace.test.mjs:124:32)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    status: 409
+  }

@@ -1,0 +1,278 @@
+{
+  "at": "2026-10-23T16:51:24.195Z",
+  "timeZone": "Asia/Shanghai",
+  "scope": "local voice, per-assistant surface modes, and layered conversation UI revision",
+  "checks": {
+    "path": "evidence/app-checks-2026-10-23T16-37-33-511Z/report.json",
+    "tests": 108,
+    "passed": true,
+    "finalCssTokenAliasBuild": "evidence/interaction-vision-20261023/ui-build-2026-10-23T16-47-52-881Z",
+    "logicUnchangedAfterSuite": true
+  },
+  "upstream": {
+    "revision": "97a4a1cab96ab3d07b0c7dac275f69afc6e7a8dc",
+    "clean": true
+  },
+  "mainSha256": "413986ce2afd8062d050150674e42d2c0ff1834a1c6396456703c1146b526030",
+  "daily": {
+    "url": "http://127.0.0.1:5217/",
+    "preserved": true,
+    "chiefId": "7e60e8a5-b4ad-4d80-ad17-a7d97e8f740b",
+    "chatMessages": 192,
+    "helpers": 3,
+    "existingConfigurationHashesUnchanged": true,
+    "permissions": [
+      {
+        "id": "7e60e8a5-b4ad-4d80-ad17-a7d97e8f740b",
+        "browser": "ask",
+        "computer": "ask"
+      },
+      {
+        "id": "e569d99d-d1b7-42d0-acc0-eb583988fa5d",
+        "browser": "ask",
+        "computer": "ask"
+      },
+      {
+        "id": "1d740a71-cd2b-46ac-bf08-1ce85ea19b7a",
+        "browser": "ask",
+        "computer": "ask"
+      },
+      {
+        "id": "4620ef15-7b97-4725-8983-d184038babfc",
+        "browser": "ask",
+        "computer": "ask"
+      }
+    ]
+  },
+  "vad": {
+    "versions": {
+      "vad": "0.0.31",
+      "onnxruntime": "1.30.0"
+    },
+    "browserModelCases": 6,
+    "passed": true,
+    "servedLocalAssets": [
+      {
+        "name": "silero_vad_v5.onnx",
+        "bytes": 2327524,
+        "sha256": "2623a2953f6ff3d2c1e61740c6cdb7168133479b267dfef114a4a3cc5bdd788f",
+        "contentType": "application/octet-stream"
+      },
+      {
+        "name": "vad.worklet.bundle.min.js",
+        "bytes": 2480,
+        "sha256": "8a48fdc7429948a2fde3d29a84bb1a64c1f67b4ba578ccaa7548b7f989f06a74",
+        "contentType": "text/javascript; charset=utf-8"
+      },
+      {
+        "name": "ort-wasm-simd-threaded.wasm",
+        "bytes": 14239897,
+        "sha256": "3398c10d07d229bd91b364548e130e0e51a8e5704b88c7c083ebbeb78842dee2",
+        "contentType": "application/wasm"
+      },
+      {
+        "name": "ort-wasm-simd-threaded.mjs",
+        "bytes": 24381,
+        "sha256": "e13f7f94fc51b4ca72b12faeb1ee95f4ace6dfbc8939bc718aabdc0a27c4299b",
+        "contentType": "text/javascript; charset=utf-8"
+      }
+    ],
+    "syntheticOnly": true
+  },
+  "ui": {
+    "resultFirst": true,
+    "processCollapsed": true,
+    "statusFilters": true,
+    "returnedToOriginalWork": {
+      "expectedWork": "c1748803-131d-41c3-b845-ebd0ec84d179",
+      "filter": "全部10",
+      "focusedWork": "c1748803-131d-41c3-b845-ebd0ec84d179",
+      "scrollTop": 772
+    },
+    "checkedNarrow": {
+      "width": 480,
+      "height": 900,
+      "scrollWidth": 480,
+      "panelBottom": 637,
+      "composerTop": 779
+    }
+  },
+  "nativeApproval": "evidence/native-capabilities-52cfb021-482c-4455-a3d4-e5e3ab3e8a9a/surface-approval-acceptance.json",
+  "served": [
+    {
+      "path": "/assets/index-DWp-89xr.js",
+      "sha256": "91e011c24348d30949c149c847eb93440c4c18a8d8ece0d4d600461b2d86a707"
+    },
+    {
+      "path": "/assets/index-CXQpP-EM.css",
+      "sha256": "c04a2123332446eb85d5911b39a9b19d6f86b1dd1b7b602827531630d79f4fe6"
+    }
+  ],
+  "sources": [
+    {
+      "path": "app/src/App.tsx",
+      "sha256": "8a75ce1e1e6ae286715ddfaedac7fbe3471e7bcf36084c48f6a0f9dc9297ea51"
+    },
+    {
+      "path": "app/src/ConversationFeed.tsx",
+      "sha256": "b908788de58c14b577a85fc8812d6fdf5603447d6f5733942a26b110f5b8d134"
+    },
+    {
+      "path": "app/src/WorkActivityList.tsx",
+      "sha256": "2d2e5ef41f4c37a17f9540676ef3b037cdaaf189a223303a889b60de46bb9ef6"
+    },
+    {
+      "path": "app/src/WorkDetail.tsx",
+      "sha256": "36a3c2cb756d2cf5f9170b0a2b8d621437495820a84f511094e0a642d26a4b49"
+    },
+    {
+      "path": "app/src/NativeHub.tsx",
+      "sha256": "3a3f947d528ab43f498293c24ea7e99a01f9a42452be92dcfee7b449682cad42"
+    },
+    {
+      "path": "app/src/projection.ts",
+      "sha256": "918c1bc52685b310173bf271fd2a2c5c7d7e00ae0260723043cee6b6f2db70f6"
+    },
+    {
+      "path": "app/src/voiceCapture.ts",
+      "sha256": "916a8f943aad8a003f36c70bba2dc38f46ac42ae612f328616ec434c4230568e"
+    },
+    {
+      "path": "app/src/realtimeSpeech.ts",
+      "sha256": "e40cd8b12a2366e7fcb2b9b4e81a0d81d8f27698a27c6be9de5245b5b1fd6de2"
+    },
+    {
+      "path": "app/src/speechGate.ts",
+      "sha256": "343a588ec3b90237c857dbd3ea2b1efd8bc5e8c396c73913cf677fd0100547d5"
+    },
+    {
+      "path": "app/src/interaction-ui.css",
+      "sha256": "920728273a33bd1a7b9a61b5a223d5b46d37fd43c80010b568702459e75a1692"
+    },
+    {
+      "path": "app/vite.config.mjs",
+      "sha256": "56e53af3fd698d7f00e7c087058ef13d9e2021100832f017f04a7f68ac5e1e26"
+    },
+    {
+      "path": "app/scripts/prepare-vad-assets.mjs",
+      "sha256": "619bffa25016b7e464d34ffa31dc50f4cef1d80a6c2902842c225cd8164306e7"
+    },
+    {
+      "path": "app/package.json",
+      "sha256": "6a92e0a602b97bad0c9dbd95ba423faddcd0142b71a6a57f5cff4167829e6aa8"
+    },
+    {
+      "path": "app/pnpm-lock.yaml",
+      "sha256": "55d1d9b1d5e629be330b3630fd8d300d392929e08d74e50f79b0e1bead3e0c6a"
+    },
+    {
+      "path": "adapters/native-capabilities.mjs",
+      "sha256": "feb80dd24c8c55b2f127556c61fcffb15ec4090d66a777989a999f52cfc44f93"
+    },
+    {
+      "path": "adapters/surface-grants.mjs",
+      "sha256": "15f4b8d685021afb6421b2d145208b57b4ff59d9878035a3833d76011c4c5a51"
+    },
+    {
+      "path": "adapters/workspace-hook.mjs",
+      "sha256": "4c0463cacb054aad98e2130980cdb7f6b3bf1b8bc78e15500671603b60afc01f"
+    },
+    {
+      "path": "adapters/runtime.mjs",
+      "sha256": "3c0d63b92610d4ca9bb267b994e736c9ddc393ff7d3f070ffccea20c76b9ca7e"
+    },
+    {
+      "path": "adapters/server.mjs",
+      "sha256": "ed678601d0cccbd325e464b38d9258712d7ec594b2aa047e7e51f78f8fe51be8"
+    }
+  ],
+  "documents": [
+    "docs/降噪与权限交互验收_v1.0.md",
+    "ui-system/voice-permissions-hierarchy-decision.md",
+    "../../Agent文档/openmaus-assistant_工作日志/工作报告_20261024_降噪授权与交互层次_v1.0.md"
+  ],
+  "unrelatedIndexRecordsPreserved": true,
+  "proof": [
+    {
+      "name": "daily-activity-delivered.png",
+      "sha256": "090203006a1ab0e0fec5ababb15ac8cedd627ee162c7cc3617c3d21baada9321"
+    },
+    {
+      "name": "daily-activity.png",
+      "sha256": "090203006a1ab0e0fec5ababb15ac8cedd627ee162c7cc3617c3d21baada9321"
+    },
+    {
+      "name": "daily-after.json",
+      "sha256": "0a6a93f75fb6cb872f55a66734234bfd55852832cc22d481e608b7bef59e826e"
+    },
+    {
+      "name": "daily-before.json",
+      "sha256": "bfaab235ab4c93d97590de08a287d85279724aea8aadda475c2679091da0918f"
+    },
+    {
+      "name": "daily-permissions.png",
+      "sha256": "c9999bacffd93b5e83f2b5ce48270dab3a3a9e839c3f78438eb469933b63108b"
+    },
+    {
+      "name": "qa-activity-final.png",
+      "sha256": "31040d8ad94ebd7a40921e5e30cae6b929cd21d25dbb96d8907b5f007a3bca70"
+    },
+    {
+      "name": "qa-activity-narrow-final.png",
+      "sha256": "730981291aaa7bd876717e731858ffbcbc4a4e224e67ef555cc7e75f13e33012"
+    },
+    {
+      "name": "qa-activity.png",
+      "sha256": "05721baafad0d6bf84f96bdc4f70ba076d244b94251b16c84635bf4d55a0bafc"
+    },
+    {
+      "name": "qa-conversation.png",
+      "sha256": "d3803da3dec4f637457882911a8372a297d7387a8a4fdf28f81759b3a9e25c50"
+    },
+    {
+      "name": "qa-permissions-default.png",
+      "sha256": "839aec41ce61b2a8505364f29ddac53c0d7884ac0ea3e0ac04d269c09bea8e45"
+    },
+    {
+      "name": "qa-permissions-narrow.png",
+      "sha256": "752576c5082aa80e1d209b23f5f560bdb6cd0b93d60dfdd11e05992d5eaf5e4e"
+    },
+    {
+      "name": "qa-result.png",
+      "sha256": "1ede14a5a7026af70116392f1612038e5f629c9909d462a6c799cc40f8625877"
+    },
+    {
+      "name": "qa-task-attention.png",
+      "sha256": "10d271204dcbaa5cd4f4e6267c9a619d3f4d902176bf6c0b64c38acf2619db2c"
+    },
+    {
+      "name": "ui-return-position.json",
+      "sha256": "027b15b3d3b91fc08899badf0fc876686d080bed2c1098ad7206bd506bf620a3"
+    },
+    {
+      "name": "vad-model-final.json",
+      "sha256": "74b5c6bd61531545d6594fda4c6294e3f129022927dab678e73d0c0019b3efb1"
+    },
+    {
+      "name": "vad-model-final.png",
+      "sha256": "507d0e2473a68b5efde5d491feddef10ca10767b5fe92df1bb33f66a2f54ac2b"
+    },
+    {
+      "name": "vad-model-results.json",
+      "sha256": "7d7fda4f3dd2f01738fb1cf9f610b81478ce66dc4a62c30895a3cbeef26f4839"
+    },
+    {
+      "name": "vad-model-results.png",
+      "sha256": "78a55eb12b2e4395e58a8e263da07b36da6bd612455792ec319fe73430700e06"
+    }
+  ],
+  "boundaries": {
+    "humanHeadsetRetested": false,
+    "automaticVoiceBargeInDuringTts": false,
+    "privateDesktopScreenshotsOrInput": false,
+    "realCloudAsrTtsRetested": false,
+    "visionUpstreamTokenFailureFixed": false,
+    "independentG5Signed": false,
+    "G7Published": false
+  }
+}

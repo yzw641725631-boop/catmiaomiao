@@ -1,0 +1,10 @@
+openmausbot webhook receiver on http://127.0.0.1:20086
+openmausbot open-source edition (enterprise layer present but OMB_LICENSE_KEY is not set)
+local requests: owner trust (desktop app)
+brand: default
+openmausbot server on http://127.0.0.1:20085
+[omb-turn] bot=540f6469-4188-4326-82b7-aab6896c9d60 text="START_BACKGROUND_84 帮我后台保存合成文件，我要继续聊天。\n\n[本地助理能力说明，2026-10-23 23:17:53 " images=0 depth=0 card=false
+browser: Google Chrome 155 (installed)
+[omb-turn] bot=540f6469-4188-4326-82b7-aab6896c9d60 text="WORK_LONG_84 保存合成文件并保持工作进行中。\n\n本次工作唯一指定目录：J:\\agent_project\\projects\\ope" images=0 depth=0 card=false
+[omb-turn] bot=540f6469-4188-4326-82b7-aab6896c9d60 text="PARALLEL_CHAT_84 后台工作中，我还可以和你聊吗？\n\n[本地助理能力说明，2026-10-23 23:17:54 Asia/S" images=0 depth=0 card=false
+auto-recall: 主助理 (540f6469-4188-4326-82b7-aab6896c9d60) got 0 note and 1 conversation passage(s) in e63d0f09-b478-46a2-997c-56997597c693

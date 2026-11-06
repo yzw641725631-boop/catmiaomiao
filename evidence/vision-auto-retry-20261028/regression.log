@@ -1,0 +1,23 @@
+✔ one voice owner spans utterances and an old browser cannot renew, release or transcribe after takeover (1.6002ms)
+✔ an ASR completion is consumed once and missing model replies release voice waiting without replay (373.0809ms)
+✔ a proven reply to this voice request speaks even when an older handoff keeps native requestPending true (0.4499ms)
+✔ the reading view hides only adapter context and exposes actual helper replies and pending questions (0.9559ms)
+✔ live status explicitly reports an unanswered helper question instead of pretending that the helper is running (1.4659ms)
+✔ native handoff timeout closes its old question and a finished helper is not left in the pending badge (0.5106ms)
+✔ artifact downloads use the exact native message link rather than an unproven relative path (0.8585ms)
+✔ routine grants only cover owned, scoped services, retaining approvals for external writes and computer actions (2.1483ms)
+✔ uploaded image bytes reach the vision provider through the native conversation and remain viewable, with no text-only fallback (8069.5837ms)
+✔ an independent native job creates its scoped file without clicks while the main chat replies before the job ends (5892.9636ms)
+✔ transport removes only obsolete companion envelopes and preserves user text, live permissions and complete tool chains (1.9474ms)
+✔ ReachAI selections, credentials and unsupported images fail explicitly (1.1164ms)
+✔ native SSE preserves tool argument fragments, reasoning, usage and the next tool-result turn (59.2625ms)
+✔ model EOF and error events never become a successful completion (17.1567ms)
+✔ catalog strips connection secrets, ASR sends native JSON and TTS validates business errors (55.3085ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19784.1364
