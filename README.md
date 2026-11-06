@@ -5,6 +5,7 @@
 此仓库保存 openmaus-assistant 当前开发源码及本项目的 Agent 文档。项目记录从[项目文档入口](Agent文档/main.md)继续，历史工作日志已复制到 [Agent文档/openmaus-assistant_工作日志](Agent文档/openmaus-assistant_工作日志/)。
 
 - [克隆、安装与上传范围](docs/仓库使用说明.md)：Node 24、依赖安装、固定上游版本和本地服务说明。
+- [本次 GitHub 上传记录](Agent文档/openmaus-assistant_工作日志/工作报告_20261107_GitHub源码与项目文档归集_v1.0.md)。
 - [最新功能补齐记录](Agent文档/openmaus-assistant_工作日志/工作报告_20261101_同类功能补齐与抽屉整理_v1.0.md)。
 - 本仓库包含项目专属文档；运行配置、密钥、私人会话、数据库及原始调试截图保留在本地。
 - 当前为开发版本，历史报告中的独立 G5、G7 和用户实机验收状态继续以各报告为准。

@@ -781,6 +781,19 @@
       "skills": [],
       "template": null,
       "knowledge": null
+    },
+    {
+      "id": "openmaus-assistant_worklog_github-source-20261107",
+      "name": "GitHub源码与项目文档归集",
+      "project": "openmaus-assistant",
+      "domain": "工作日志",
+      "path": "Agent文档/openmaus-assistant_工作日志/工作报告_20261107_GitHub源码与项目文档归集_v1.0.md",
+      "version": "v1.0",
+      "skills": [
+        "agent-doc-memory"
+      ],
+      "template": null,
+      "knowledge": "仅本项目源码与专属Agent资料上传指定公开仓库；26份原工作日志与1份项目概览归集；排除凭据和调试运行数据，固定上游gitlink。"
     }
   ]
 }
